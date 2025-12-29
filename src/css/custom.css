@@ -4,6 +4,15 @@
  * work well for content-centric websites.
  */
 
+/* Tailwind directives removed - using regular CSS instead
+   To use Tailwind, install: npm install -D tailwindcss postcss autoprefixer
+   Then uncomment the @tailwind directives below:
+   
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #059669;
@@ -1226,8 +1235,189 @@ button[class*="copyButton"]:hover {
 }
 
 /* ============================================
-   SIDEBAR ENHANCEMENTS - PREMIUM DECORATED
+   SIDEBAR ENHANCEMENTS - USING TAILWIND UTILITIES
    ============================================ */
+
+/* Level-based Color Coding and Borders - Using CSS */
+/* Level 1 - Blue */
+.menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(239, 246, 255, 1), rgba(238, 242, 255, 1));
+  border-left: 4px solid rgb(59, 130, 246);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
+  border-right: 1px solid rgba(59, 130, 246, 0.2);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  color: rgb(30, 64, 175);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.2), rgba(30, 58, 138, 0.2));
+  border-left-color: rgb(96, 165, 250);
+  border-top-color: rgba(96, 165, 250, 0.3);
+  border-right-color: rgba(96, 165, 250, 0.3);
+  border-bottom-color: rgba(96, 165, 250, 0.3);
+  color: rgb(147, 197, 253);
+}
+
+/* Level 2 - Green */
+.menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(236, 253, 245, 1), rgba(240, 253, 250, 1));
+  border-left: 3px solid rgb(5, 150, 105);
+  border-top: 1px solid rgba(5, 150, 105, 0.2);
+  border-right: 1px solid rgba(5, 150, 105, 0.2);
+  border-bottom: 1px solid rgba(5, 150, 105, 0.2);
+  color: rgb(4, 120, 87);
+  font-weight: 600;
+  border-radius: 0.375rem;
+  margin-bottom: 0.375rem;
+  margin-left: 0.5rem;
+}
+
+[data-theme="dark"] .menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(6, 78, 59, 0.2), rgba(6, 78, 59, 0.2));
+  border-left-color: rgb(16, 185, 129);
+  border-top-color: rgba(16, 185, 129, 0.3);
+  border-right-color: rgba(16, 185, 129, 0.3);
+  border-bottom-color: rgba(16, 185, 129, 0.3);
+  color: rgb(52, 211, 153);
+}
+
+/* Level 3 - Orange */
+.menu__list .menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(255, 251, 235, 1), rgba(254, 252, 232, 1));
+  border-left: 2px solid rgb(245, 158, 11);
+  border-top: 1px solid rgba(245, 158, 11, 0.2);
+  border-right: 1px solid rgba(245, 158, 11, 0.2);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  color: rgb(217, 119, 6);
+  font-weight: 500;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+}
+
+[data-theme="dark"] .menu__list .menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(120, 53, 15, 0.2), rgba(120, 53, 15, 0.2));
+  border-left-color: rgb(251, 191, 36);
+  border-top-color: rgba(251, 191, 36, 0.3);
+  border-right-color: rgba(251, 191, 36, 0.3);
+  border-bottom-color: rgba(251, 191, 36, 0.3);
+  color: rgb(252, 211, 77);
+}
+
+/* Level 4+ - Purple */
+.menu__list .menu__list .menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(250, 245, 255, 1), rgba(245, 243, 255, 1));
+  border-left: 2px solid rgb(139, 92, 246);
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+  border-right: 1px solid rgba(139, 92, 246, 0.2);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  color: rgb(124, 58, 237);
+  font-weight: 500;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1.5rem;
+}
+
+[data-theme="dark"] .menu__list .menu__list .menu__list .menu__list > .menu__list-item--collapsible > .menu__link {
+  background: linear-gradient(to bottom right, rgba(88, 28, 135, 0.2), rgba(88, 28, 135, 0.2));
+  border-left-color: rgb(167, 139, 250);
+  border-top-color: rgba(167, 139, 250, 0.3);
+  border-right-color: rgba(167, 139, 250, 0.3);
+  border-bottom-color: rgba(167, 139, 250, 0.3);
+  color: rgb(196, 181, 253);
+}
+
+/* Show chevron icons for ALL collapsible categories (top-level and nested) */
+.menu__list-item--collapsible > .menu__link::after,
+.menu__list .menu__list .menu__list-item--collapsible > .menu__link::after,
+.menu__list .menu__list .menu__list .menu__list-item--collapsible > .menu__link::after {
+  display: block !important;
+  position: absolute;
+  right: 0.75rem;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transition: all 0.3s ease;
+  content: "";
+  opacity: 0.6;
+  transform-origin: center;
+  z-index: 1;
+}
+
+/* Collapsed state - Right Chevron (▶) */
+.menu__list-item--collapsed > .menu__link::after,
+.menu__list .menu__list .menu__list-item--collapsed > .menu__link::after,
+.menu__list .menu__list .menu__list .menu__list-item--collapsed > .menu__link::after {
+  transform: rotate(-45deg);
+  margin-top: -2px;
+}
+
+/* Expanded state - Down Chevron (▼) */
+.menu__list-item:not(.menu__list-item--collapsed) > .menu__link::after,
+.menu__list .menu__list .menu__list-item:not(.menu__list-item--collapsed) > .menu__link::after,
+.menu__list .menu__list .menu__list .menu__list-item:not(.menu__list-item--collapsed) > .menu__link::after {
+  transform: rotate(45deg);
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.menu__list-item--collapsible .menu__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 2rem;
+}
+
+/* Icons are now included directly in the sidebar labels */
+/* Professional icon styling - ensure icons display properly */
+.menu__link {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link::first-letter {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+}
+
+/* Hide all arrow icons - removed level-specific arrow colors */
+
+/* Visual separation between levels */
+.menu__list .menu__list {
+  border-left: 2px solid rgba(209, 213, 219, 1);
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu__list .menu__list .menu__list {
+  border-left: 2px solid rgba(229, 231, 235, 1);
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.menu__list .menu__list .menu__list .menu__list {
+  border-left: 1px solid rgba(243, 244, 246, 1);
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+[data-theme="dark"] .menu__list .menu__list {
+  border-left-color: rgba(55, 65, 81, 1);
+}
+
+[data-theme="dark"] .menu__list .menu__list .menu__list {
+  border-left-color: rgba(31, 41, 55, 1);
+}
+
+[data-theme="dark"] .menu__list .menu__list .menu__list .menu__list {
+  border-left-color: rgba(17, 24, 39, 1);
+}
 
 /* Sidebar container - Professional clean look */
 .theme-doc-sidebar-container {
@@ -1444,9 +1634,10 @@ button[class*="copyButton"]:hover {
 }
 
 .menu__list .menu__list .menu__link::before,
-.menu__list .menu__list .menu__link::after {
+/* Removed - was hiding chevron icons on nested categories */
+/* .menu__list .menu__list .menu__link::after {
   display: none !important;
-}
+} */
 
 /* Regular item hover - subtle */
 .menu__list .menu__list .menu__link:hover {
@@ -1465,15 +1656,30 @@ button[class*="copyButton"]:hover {
   border: 1px solid rgba(16, 185, 129, 0.3) !important;
 }
 
-/* Category collapsible arrow */
+/* Category collapsible arrow - Using CSS */
 .menu__caret {
   transition: transform 0.3s ease;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .menu__caret::before {
+  width: 12px;
+  height: 12px;
   background: var(--ifm-color-primary) !important;
   mask-size: contain;
   -webkit-mask-size: contain;
+}
+
+[data-theme="dark"] .menu__caret {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .menu__list-item--collapsed .menu__caret {
@@ -1484,16 +1690,30 @@ button[class*="copyButton"]:hover {
   transform: rotate(90deg);
 }
 
-/* Nested menu items with indentation indicator */
-.menu__list .menu__list {
-  margin-left: 0.5rem;
-  padding-left: 0.75rem;
-  border-left: 2px solid var(--ifm-color-emphasis-300);
-  position: relative;
+/* Hover effect on caret */
+.menu__list-item--collapsible .menu__link:hover .menu__caret {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
-[data-theme="dark"] .menu__list .menu__list {
-  border-left-color: rgba(255, 255, 255, 0.1);
+[data-theme="dark"] .menu__list-item--collapsible .menu__link:hover .menu__caret {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Removed - Now using Tailwind @layer components above */
+
+/* Level-specific caret colors */
+.menu__list > .menu__list-item--collapsible .menu__caret::before {
+  background: rgb(59, 130, 246) !important;
+}
+.menu__list .menu__list > .menu__list-item--collapsible .menu__caret::before {
+  background: rgb(5, 150, 105) !important;
+}
+.menu__list .menu__list .menu__list > .menu__list-item--collapsible .menu__caret::before {
+  background: rgb(245, 158, 11) !important;
+}
+.menu__list .menu__list .menu__list .menu__list > .menu__list-item--collapsible .menu__caret::before {
+  background: rgb(139, 92, 246) !important;
 }
 
 /* Add connection lines for nested items */
