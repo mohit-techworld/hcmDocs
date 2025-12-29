@@ -191,16 +191,6 @@ const config = {
               },
             ],
           },
-          {
-            type: "search",
-            position: "right",
-          },
-          {
-            href: "https://github.com/Razor-Infotech/hcmFrontend",
-            label: "GitHub",
-            position: "right",
-            className: "navbar__item--github",
-          },
         ],
       },
       footer: {

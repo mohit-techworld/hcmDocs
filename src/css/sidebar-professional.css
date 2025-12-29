@@ -1,0 +1,352 @@
+/* ============================================
+   SIDEBAR ENHANCEMENTS - PROFESSIONAL DESIGN
+   ============================================ */
+
+/* Sidebar container with clean professional look */
+.theme-doc-sidebar-container {
+    border-right: 1px solid var(--ifm-color-emphasis-200);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.98) 0%,
+            rgba(249, 250, 251, 1) 100%);
+    position: relative;
+}
+
+[data-theme="dark"] .theme-doc-sidebar-container {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg,
+            rgba(15, 23, 42, 0.95) 0%,
+            rgba(17, 24, 39, 1) 100%);
+}
+
+/* Sidebar menu wrapper */
+.menu {
+    padding: 1.5rem 1rem;
+}
+
+/* Sidebar items base */
+.theme-doc-sidebar-item-link,
+.theme-doc-sidebar-item-category {
+    border-radius: 8px;
+    margin: 3px 0;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+/* Menu link styling - Clean and minimal */
+.menu__link {
+    border-radius: 8px;
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--ifm-font-color-base);
+    border-left: 3px solid transparent;
+}
+
+/* Hover effects - Professional and subtle */
+.menu__link:hover {
+    background: rgba(5, 150, 105, 0.06);
+    color: var(--ifm-color-primary-dark);
+    border-left-color: var(--ifm-color-primary);
+    padding-left: calc(1rem + 3px);
+}
+
+[data-theme="dark"] .menu__link:hover {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--ifm-color-primary-light);
+}
+
+/* Active link - Clean indicator */
+.menu__link--active {
+    background: linear-gradient(90deg,
+            rgba(5, 150, 105, 0.12) 0%,
+            rgba(5, 150, 105, 0.04) 100%);
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    border-left: 3px solid var(--ifm-color-primary);
+    padding-left: calc(1rem + 3px);
+    position: relative;
+}
+
+/* Active indicator dot */
+.menu__link--active::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background: var(--ifm-color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+}
+
+[data-theme="dark"] .menu__link--active {
+    background: linear-gradient(90deg,
+            rgba(16, 185, 129, 0.15) 0%,
+            rgba(16, 185, 129, 0.05) 100%);
+}
+
+/* ============================================
+   CATEGORY HEADERS - PROFESSIONAL STYLING
+   ============================================ */
+
+/* Category headers - Clean professional look */
+.menu__list-item--collapsed .menu__link,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link {
+    /* Typography - Professional and clear */
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ifm-color-emphasis-700);
+
+    /* Spacing */
+    padding: 0.875rem 1rem 0.875rem 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    /* Visual styling - Minimal and clean */
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid var(--ifm-color-emphasis-300);
+    box-shadow: none;
+
+    /* Position for pseudo-elements */
+    position: relative;
+
+    /* Flexbox for alignment */
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+/* Professional category indicator - Vertical bar */
+.menu__list-item--collapsed .menu__link::before,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--ifm-color-primary);
+    border-radius: 0 2px 2px 0;
+    transition: all 0.25s ease;
+}
+
+/* Dark theme category styling */
+[data-theme="dark"] .menu__list-item--collapsed .menu__link,
+[data-theme="dark"] .menu__list-item:not(.menu__list-item--collapsed) .menu__link {
+    color: var(--ifm-color-emphasis-600);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Category hover effect - Subtle and professional */
+.menu__list-item--collapsed .menu__link:hover,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link:hover {
+    background: rgba(5, 150, 105, 0.04);
+    color: var(--ifm-color-primary);
+    border-left-color: transparent;
+    padding-left: 1.25rem;
+}
+
+.menu__list-item--collapsed .menu__link:hover::before,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link:hover::before {
+    height: 80%;
+    background: linear-gradient(180deg,
+            var(--ifm-color-primary) 0%,
+            var(--ifm-color-primary-dark) 100%);
+}
+
+[data-theme="dark"] .menu__list-item--collapsed .menu__link:hover,
+[data-theme="dark"] .menu__list-item:not(.menu__list-item--collapsed) .menu__link:hover {
+    background: rgba(16, 185, 129, 0.08);
+}
+
+/* ============================================
+   REGULAR MENU ITEMS - CLEAN & SIMPLE
+   ============================================ */
+
+/* Override for regular (non-category) items */
+.menu__list .menu__list .menu__link {
+    /* Reset category styling */
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    color: var(--ifm-font-color-base) !important;
+    padding: 0.625rem 1rem !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    background: transparent !important;
+    border: none !important;
+    border-left: 3px solid transparent !important;
+    box-shadow: none !important;
+}
+
+.menu__list .menu__list .menu__link::before {
+    display: none !important;
+}
+
+/* Keep the active indicator dot for regular items */
+.menu__list .menu__list .menu__link::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 5px;
+    height: 5px;
+    background: var(--ifm-color-primary);
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.menu__list .menu__list .menu__link--active::after {
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+}
+
+/* Regular item hover - Clean and subtle */
+.menu__list .menu__list .menu__link:hover {
+    background: rgba(5, 150, 105, 0.06) !important;
+    color: var(--ifm-color-primary-dark) !important;
+    border-left-color: var(--ifm-color-primary) !important;
+    padding-left: calc(1rem + 3px) !important;
+}
+
+[data-theme="dark"] .menu__list .menu__list .menu__link:hover {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: var(--ifm-color-primary-light) !important;
+}
+
+/* Category collapsible arrow - Clean design */
+.menu__caret {
+    transition: transform 0.25s ease;
+    opacity: 0.6;
+}
+
+.menu__caret::before {
+    background: var(--ifm-color-primary) !important;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+}
+
+.menu__list-item--collapsed .menu__caret {
+    transform: rotate(0deg);
+}
+
+.menu__list-item:not(.menu__list-item--collapsed) .menu__caret {
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+/* Nested menu items - Professional indentation */
+.menu__list .menu__list {
+    margin-left: 0;
+    padding-left: 1.25rem;
+    border-left: 1px solid var(--ifm-color-emphasis-200);
+    position: relative;
+    margin-top: 0.25rem;
+}
+
+[data-theme="dark"] .menu__list .menu__list {
+    border-left-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Sidebar section spacing */
+.menu__list>.menu__list-item:first-child {
+    margin-top: 0;
+}
+
+.menu__list>.menu__list-item+.menu__list-item {
+    margin-top: 0;
+}
+
+/* Smooth entrance animation */
+.theme-doc-sidebar-container .menu__list-item {
+    animation: fadeInUp 0.4s ease-out backwards;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(1) {
+    animation-delay: 0.03s;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(2) {
+    animation-delay: 0.06s;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(3) {
+    animation-delay: 0.09s;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(4) {
+    animation-delay: 0.12s;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(5) {
+    animation-delay: 0.15s;
+}
+
+.theme-doc-sidebar-container .menu__list-item:nth-child(6) {
+    animation-delay: 0.18s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Professional scrollbar */
+.theme-doc-sidebar-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.theme-doc-sidebar-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.theme-doc-sidebar-container::-webkit-scrollbar-thumb {
+    background: var(--ifm-color-emphasis-300);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.theme-doc-sidebar-container::-webkit-scrollbar-thumb:hover {
+    background: var(--ifm-color-primary);
+}
+
+/* Mobile sidebar */
+@media (max-width: 996px) {
+    .theme-doc-sidebar-container {
+        background: var(--ifm-background-color);
+    }
+
+    .menu {
+        padding: 1.5rem 1rem;
+    }
+
+    .menu__link {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .menu__list-item--collapsed .menu__link,
+    .menu__list-item:not(.menu__list-item--collapsed) .menu__link {
+        font-size: 0.85rem;
+    }
+}

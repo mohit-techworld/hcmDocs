@@ -73,6 +73,14 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "MS1 Server",
+      collapsible: false,
+      items: [
+        "modules/demo-management",
+      ],
+    },
+    {
+      type: "category",
       label: "Frontend",
       collapsible: false,
       items: [
