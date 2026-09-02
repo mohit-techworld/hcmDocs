@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Performance Ratings"
+description: "The Performance Ratings API is part of a comprehensive performance management system that enables managers to rate employee performance based on predefined KPI sets."
 ---
 
 # Performance Ratings 
 
-<!-- # Performance Ratings Management API Documentation -->
+{/* # Performance Ratings Management API Documentation */}
 
 ## System Overview
 
@@ -42,7 +44,7 @@ graph TD
     I[Query Ratings] --> J[Hierarchical Access Check]
     J --> K[Filter by Frequency & Period]
     K --> L[Aggregate & Calculate Metrics]
-    L --> M[Generate Analytics (Trends, Categories, etc.)]
+    L --> M["Generate Analytics (Trends, Categories, etc.)"]
     
     N[Top Performer Queries] --> O[Aggregate Averages]
     O --> P[Sort & Limit Results]

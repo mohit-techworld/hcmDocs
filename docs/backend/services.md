@@ -1,6 +1,7 @@
 ---
 title: "Backend Services & Queues"
 sidebar_position: 5
+description: "The src/services folder contains cross-cutting services such as email delivery, queue workers, and domain-specific helpers."
 ---
 
 # Backend Services & Queues

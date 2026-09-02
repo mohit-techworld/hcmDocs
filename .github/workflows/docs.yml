@@ -1,0 +1,37 @@
+name: Docs
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # showLastUpdateTime reads git history; a shallow clone reports
+          # every page as changed in the same commit.
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Every page needs title + description front matter.
+      - name: Check front matter
+        run: node scripts/check-frontmatter.cjs --list
+
+      # Nothing orphaned in static/.
+      - name: Check unused assets
+        run: node scripts/check-unused-assets.cjs
+
+      # onBrokenLinks is "throw", so this is also the link check.
+      - name: Build
+        run: pnpm build

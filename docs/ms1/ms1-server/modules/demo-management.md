@@ -1,6 +1,7 @@
 ---
 title: Demo Management API
 sidebar_position: 1
+description: "The Demo Management module handles the complete lifecycle of product demo requests from initial submission through OTP verification, scheduling, and completion."
 ---
 
 # Demo Management API (Server-Side)

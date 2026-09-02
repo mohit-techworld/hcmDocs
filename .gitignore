@@ -28,3 +28,7 @@ yarn-error.log*
 *.swp
 *.swo
 *~
+
+# Search index copied into static/ so dev-server search works (see
+# scripts/dev-search-index.cjs). Regenerated on demand; never committed.
+/static/search-index.json

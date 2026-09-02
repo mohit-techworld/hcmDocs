@@ -1,6 +1,7 @@
 ---
 title: Plan Management API
 sidebar_position: 2
+description: "The Plan Management module provides a comprehensive system for creating, managing, and configuring pricing plans with associated permissions. It enables."
 ---
 
 # Plan Management API (Server-Side)

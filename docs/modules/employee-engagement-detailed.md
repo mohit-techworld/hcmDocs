@@ -1,6 +1,7 @@
 ---
 title: Employee Engagement Module - Complete Documentation
 sidebar_position: 6
+description: "This document provides a comprehensive guide to the Employee Engagement module, covering frontend components, backend APIs, real-time socket."
 ---
 
 # Employee Engagement Module - Complete Documentation
@@ -1138,12 +1139,12 @@ Available categories:
 
 Six emoji reaction types:
 
-- 👍 Good
-- ❤️ Love
-- 😂 Laugh
-- 😮 Surprised
-- 😢 Sad
-- 😡 Angry
+- Good
+- Love
+- Laugh
+- Surprised
+- Sad
+- Angry
 
 Users can:
 

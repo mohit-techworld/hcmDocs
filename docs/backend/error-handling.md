@@ -1,6 +1,7 @@
 ---
 title: Error Handling Guidelines
 sidebar_position: 4
+description: "The backend standardises error responses so clients receive actionable messages while logs retain full stack traces. Use the following patterns when."
 ---
 
 # Error Handling Guidelines

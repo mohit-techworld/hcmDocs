@@ -1,6 +1,7 @@
 ---
 title: Productivity Lens
 sidebar_position: 15
+description: "Productivity Lens analyses employee device usage, activity timelines, and productivity scores."
 ---
 
 # Productivity Lens
@@ -48,7 +49,7 @@ After installation, the agent takes approximately 1-2 minutes to begin populatin
 
 Different roles have access to different features based on their permissions.
 
-### 👤 Employee
+### Employee
 
 | Feature | Description |
 |---------|-------------|
@@ -57,7 +58,7 @@ Different roles have access to different features based on their permissions.
 | **Productivity Score** | Track personal productivity score over time |
 | **Break Management** | View and manage break periods |
 
-### 👥 Manager
+### Manager
 
 | Feature | Description |
 |---------|-------------|
@@ -66,7 +67,7 @@ Different roles have access to different features based on their permissions.
 | **Alert Notifications** | Receive alerts when team productivity dips below thresholds |
 | **Application Reclassification** | Adjust productive/unproductive app categorizations |
 
-### 🔧 Administrator
+### Administrator
 
 | Feature | Description |
 |---------|-------------|
@@ -459,24 +460,24 @@ flowchart TD
 
 ### For Employees
 
-- ✅ **Grant all permissions** during initial setup for complete tracking
-- ✅ **Keep agent running** throughout work hours for accurate data
-- ✅ **Review your timeline** regularly to understand work patterns
-- ✅ **Report offline gaps** promptly with accurate reasons
+- **Grant all permissions** during initial setup for complete tracking
+- **Keep agent running** throughout work hours for accurate data
+- **Review your timeline** regularly to understand work patterns
+- **Report offline gaps** promptly with accurate reasons
 
 ### For Managers
 
-- ✅ **Review team dashboards** weekly to identify productivity trends
-- ✅ **Customize classifications** based on your team's actual tool usage
-- ✅ **Use data constructively** – focus on patterns, not micromanagement
-- ✅ **Set reasonable thresholds** for productivity alerts
+- **Review team dashboards** weekly to identify productivity trends
+- **Customize classifications** based on your team's actual tool usage
+- **Use data constructively** – focus on patterns, not micromanagement
+- **Set reasonable thresholds** for productivity alerts
 
 ### For Administrators
 
-- ✅ **Maintain classification tables** regularly as new apps emerge
-- ✅ **Monitor agent health** across the organization
-- ✅ **Configure shift hours** accurately to avoid false gap reports
-- ✅ **Review tenant settings** quarterly for optimization
+- **Maintain classification tables** regularly as new apps emerge
+- **Monitor agent health** across the organization
+- **Configure shift hours** accurately to avoid false gap reports
+- **Review tenant settings** quarterly for optimization
 
 ---
 

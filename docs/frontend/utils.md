@@ -1,6 +1,7 @@
 ---
 title: Frontend Utilities
 sidebar_position: 5
+description: "The src/utils directory holds helper functions, formatters, and integration hooks shared across the React application."
 ---
 
 # Frontend Utilities

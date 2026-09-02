@@ -1,6 +1,7 @@
 ---
 title: Landing Demo - Overview
 sidebar_position: 1
+description: "The Landing Demo module handles demo requests from the public landing page. It provides OTP-based verification to prevent spam and duplicate submissions."
 ---
 
 # Landing Demo - Complete Guide

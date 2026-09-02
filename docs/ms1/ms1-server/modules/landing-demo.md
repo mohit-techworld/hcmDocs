@@ -1,6 +1,7 @@
 ---
 title: Landing Demo API
 sidebar_position: 1
+description: "The Landing Demo module handles demo requests from the public landing page with OTP-based verification."
 ---
 
 # Landing Demo API (Server-Side)
@@ -128,5 +129,5 @@ This module enables:
 
 **Next Steps:**
 - Read [MS1 Client - Landing Demo Component](../../ms1-client/components/landing-demo) for frontend details
-- See [Landing Demo Overview](../modules/landing-demo-overview) for complete system understanding
+- See [Landing Demo Overview](../../modules/landing-demo-overview) for complete system understanding
 

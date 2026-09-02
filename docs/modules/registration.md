@@ -1,6 +1,7 @@
 ---
 title: Registration Module
 sidebar_position: 8
+description: "The registration module captures employee details between recruitment and activation. It supports multi-step onboarding, guest access tokens, and HR."
 ---
 
 # Registration Module

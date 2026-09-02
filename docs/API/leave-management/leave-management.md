@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Leave Management"
+description: "The Leave Management API provides comprehensive functionality for managing employee leave requests, approvals, and leave type administration."
 ---
 
 # Leave Management
 
-<!-- # Leave Management API Documentation -->
+{/* # Leave Management API Documentation */}
 
 ## Overview
 

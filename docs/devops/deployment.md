@@ -1,6 +1,7 @@
 ---
 title: "Deployment & Operations"
 sidebar_position: 1
+description: "This guide summarises how the HCM platform is deployed in production environments (PM2 + Node), the background services it relies on, and the operational."
 ---
 
 # Deployment & Operations

@@ -1,6 +1,7 @@
 ---
 title: Permissions Management API
 sidebar_position: 1
+description: "Permissions Management API (Server-Side) — HCM platform documentation."
 ---
 
 # Permissions Management API (Server-Side)
@@ -362,5 +363,5 @@ Permissions are assigned to pricing plans through the Plan Management module:
 
 **Next Steps:**
 - Read [MS1 Client - Permissions Management Component](../../ms1-client/components/permissions-management) for frontend implementation
-- See [Permissions Management Overview](../modules/permissions-management-overview) for complete system understanding
+- See [Permissions Management Overview](../../modules/permissions-management-overview) for complete system understanding
 

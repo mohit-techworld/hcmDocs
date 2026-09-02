@@ -1,3 +1,8 @@
+---
+title: "Document Center Module Documentation"
+description: "The Document Center Module is a comprehensive document management system designed for creating, managing, sharing, and tracking employment-related."
+---
+
 # Document Center Module Documentation
 
 ## Table of Contents

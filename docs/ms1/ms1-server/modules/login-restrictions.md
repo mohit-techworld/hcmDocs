@@ -1,6 +1,7 @@
 ---
 title: Login Restrictions API
 sidebar_position: 1
+description: "The Login Restrictions module enables administrators to control user login access through blocking, session limits, IP restrictions, and device management."
 ---
 
 # Login Restrictions API (Server-Side)
@@ -264,5 +265,5 @@ Restriction fields stored in AdminUser model:
 
 **Next Steps:**
 - Read [MS1 Client - Login Restrictions Component](../../ms1-client/components/login-restrictions) for frontend details
-- See [Login Restrictions Overview](../modules/login-restrictions-overview) for complete system understanding
+- See [Login Restrictions Overview](../../modules/login-restrictions-overview) for complete system understanding
 

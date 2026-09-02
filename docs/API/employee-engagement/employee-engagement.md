@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "Employee Engagement"
+description: "The Employee Engagement API is a comprehensive platform designed to foster workplace communication, collaboration, and community building."
 ---
 
 # Employee Engagement
 
 
-<!-- # Employee Engagement API Documentation -->
+{/* # Employee Engagement API Documentation */}
 
 ## Overview
 

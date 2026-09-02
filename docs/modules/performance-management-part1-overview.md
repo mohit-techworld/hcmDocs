@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 1: Overview & Architecture"
 sidebar_position: 7
+description: "This is the first part of a comprehensive guide to the Performance Management module. This document covers the system overview, architecture, core."
 ---
 
 # Performance Management Module - Part 1: Overview & Architecture

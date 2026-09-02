@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Tickets Management"
+description: "The Issues Management API provides a comprehensive ticket/helpdesk system for employee issue tracking and resolution."
 ---
 
 # Tickets Management
 
-<!-- # Issues Management API Documentation -->
+{/* # Issues Management API Documentation */}
 
 ## System Overview
 

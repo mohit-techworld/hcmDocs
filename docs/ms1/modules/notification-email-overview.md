@@ -1,6 +1,7 @@
 ---
 title: Notification Email - Overview
 sidebar_position: 1
+description: "The Notification Email module manages the list of email addresses that receive automated notifications from the system. It allows administrators to add."
 ---
 
 # Notification Email - Complete Guide

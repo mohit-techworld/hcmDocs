@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 3: Rating Management"
 sidebar_position: 9
+description: "This document provides a comprehensive guide to creating and managing performance ratings, covering individual ratings, score calculations, period."
 ---
 
 # Performance Management Module - Part 3: Rating Management

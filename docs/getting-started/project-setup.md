@@ -1,6 +1,7 @@
 ---
 title: Project Setup
 sidebar_position: 1
+description: "Follow this guide to run the HCM platform locally. It covers prerequisites, environment variables, dependency installation, and common scripts for both."
 ---
 
 # Project Setup
@@ -95,7 +96,9 @@ PUBLIC_IP=127.0.0.1
 DEBUG_TIMELINE=0
 ```
 
-> ⚠️  Replace secrets with secure values before deploying to production.  Do not commit `.env` files.
+:::danger Do not commit secrets
+Replace secrets with secure values before deploying to production. `.env` files must never be committed.
+:::
 
 ### 3. Firebase Service Account
 

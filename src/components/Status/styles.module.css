@@ -1,0 +1,18 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.yes { color: var(--ifm-color-success-dark, #2e8555); }
+.no { color: var(--ifm-color-danger-dark, #cc3333); }
+.partial { color: var(--ifm-color-warning-dark, #b45309); }
+.info { color: var(--ifm-color-emphasis-700); }
+
+[data-theme="dark"] .yes { color: var(--ifm-color-success-light, #4caf7d); }
+[data-theme="dark"] .no { color: var(--ifm-color-danger-light, #f07575); }
+[data-theme="dark"] .partial { color: var(--ifm-color-warning-light, #e0a95c); }

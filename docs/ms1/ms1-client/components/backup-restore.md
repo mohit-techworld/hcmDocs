@@ -1,6 +1,7 @@
 ---
 title: Backup & Restore Component
 sidebar_position: 3
+description: "The Backup & Restore component (components/backup-restore/BackupRestore.jsx) provides a comprehensive admin interface for managing database backups and restores."
 ---
 
 # Backup & Restore Component (MS1 Client)
@@ -307,10 +308,10 @@ backupRestoreApi.deleteAdminBackup(adminKey, backupFileName)
 ### 1. Tab Navigation
 
 **Tabs:**
-- 💾 **Backups** - Create and manage backups
-- ⬇️ **Restore** - Restore databases
-- ⚙️ **Settings** - Configure backup settings
-- 🔒 **Admin** - Admin database operations (protected)
+- **Backups** - Create and manage backups
+- **Restore** - Restore databases
+- **Settings** - Configure backup settings
+- **Admin** - Admin database operations (protected)
 
 ### 2. Company Selector
 
@@ -507,7 +508,7 @@ The component uses Tailwind CSS with:
 ---
 
 **Next Steps:**
-- 📖 [MS1 Server - Backup & Restore API](../../ms1-server/modules/backup-restore)
-- 🔧 [MS1 Client - Folder Structure](../folder-structure)
-- 🎨 [MS1 Client - Components Overview](./overview)
+- [MS1 Server - Backup & Restore API](../../ms1-server/modules/backup-restore)
+- [MS1 Client - Folder Structure](../folder-structure)
+- [MS1 Client - Components Overview](../components)
 

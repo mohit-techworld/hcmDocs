@@ -1,6 +1,7 @@
 ---
 title: Billing API
 sidebar_position: 1
+description: "The Billing module provides comprehensive billing information, subscription management, and trial tracking for companies."
 ---
 
 # Billing API (Server-Side)
@@ -158,5 +159,5 @@ This module enables:
 
 **Next Steps:**
 - Read [MS1 Client - Billing Component](../../ms1-client/components/billing) for frontend details
-- See [Billing Overview](../modules/billing-overview) for complete system understanding
+- See [Billing Overview](../../modules/billing-overview) for complete system understanding
 

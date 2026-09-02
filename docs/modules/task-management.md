@@ -1,6 +1,7 @@
 ---
 title: Task Management Module
 sidebar_position: 1
+description: "The Task Management module tracks assignments, action items, and daily updates. It exposes APIs for creating tasks, updating progress, uploading."
 ---
 
 # Task Management

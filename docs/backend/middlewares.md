@@ -1,6 +1,7 @@
 ---
 title: Middleware Catalogue
 sidebar_position: 6
+description: "Middlewares in src/middlewares apply shared behaviours—authentication, permission checks, file handling, device validation—between the router and controllers."
 ---
 
 # Middleware Catalogue

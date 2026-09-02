@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "Company Settings"
+description: "Company Settings — HCM platform documentation."
 ---
 
 # Company Settings
 
 
-<!-- # Company Settings API Documentation -->
+{/* # Company Settings API Documentation */}
 
 ## System Overview
 

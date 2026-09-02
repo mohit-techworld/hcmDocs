@@ -1,6 +1,7 @@
 ---
 title: "Geolocation & Field Tracking"
 sidebar_position: 18
+description: "This module tracks field workers, geofence compliance, and location visits. Managers can view live locations, history, and geofence status."
 ---
 
 # Geolocation & Field Tracking

@@ -1,6 +1,7 @@
 ---
 title: "Ticket & Issue Management"
 sidebar_position: 11
+description: "The ticketing module enables employees to raise issues, track status, and escalate POSH-related cases. It integrates with notifications (email, push."
 ---
 
 # Ticket & Issue Management

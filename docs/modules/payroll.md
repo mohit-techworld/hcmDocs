@@ -1,6 +1,7 @@
 ---
 title: Payroll Management Module
 sidebar_position: 2
+description: "Payroll Management automates salary calculation, statutory compliance, payroll runs, and full-and-final (FNF) settlements."
 ---
 
 # Payroll Management

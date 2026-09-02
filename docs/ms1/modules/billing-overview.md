@@ -1,6 +1,7 @@
 ---
 title: Billing - Overview
 sidebar_position: 1
+description: "The Billing module provides comprehensive billing information, subscription management, trial tracking, and payment history for companies. It enables."
 ---
 
 # Billing - Complete Guide

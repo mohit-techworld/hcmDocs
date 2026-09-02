@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 5: Dashboards and Analytics"
 sidebar_position: 11
+description: "This document provides a comprehensive guide to performance dashboards and analytics, covering manager views, employee self-views, super admin dashboards."
 ---
 
 # Performance Management Module - Part 5: Dashboards and Analytics

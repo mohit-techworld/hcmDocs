@@ -1,6 +1,7 @@
 ---
 title: Authentication (Company/Tenant) - Overview
 sidebar_position: 1
+description: "The Authentication module handles company/tenant creation, credential management, and subdomain-based routing. It enables multi-tenant architecture where."
 ---
 
 # Authentication (Company/Tenant) - Complete Guide

@@ -1,6 +1,7 @@
 ---
 title: Plan Management Component
 sidebar_position: 2
+description: "The Plan Management component is a React-based admin interface for creating, managing, and configuring pricing plans with associated permissions. It."
 ---
 
 # Plan Management Component (MS1 Client)
@@ -13,13 +14,13 @@ The Plan Management component is a React-based admin interface for creating, man
 
 The `PlanManagement` component (`components/plan-management/PlanManagement.jsx`) provides administrators with a comprehensive interface to:
 
-- 📦 Create and edit pricing plans
-- 💰 Set monthly and yearly pricing
-- 👥 Configure employee limits
-- 🔐 Assign permissions to plans
-- 📊 View plan statistics
-- 🎨 Visual plan cards with color themes
-- 🔍 Search and filter permissions
+- Create and edit pricing plans
+- Set monthly and yearly pricing
+- Configure employee limits
+- Assign permissions to plans
+- View plan statistics
+- Visual plan cards with color themes
+- Search and filter permissions
 
 ## Component Structure
 
@@ -121,10 +122,10 @@ PlanManagement Component
 **Color Themes:**
 The component automatically assigns color themes based on plan name:
 - 🆓 FREE - Green theme
-- ⭐ PREMIUM - Yellow theme
-- 🏢 ENTERPRISE - Purple theme
-- 🚀 STARTER - Blue theme
-- 💎 DIAMOND - Pink theme
+- PREMIUM - Yellow theme
+- ENTERPRISE - Purple theme
+- STARTER - Blue theme
+- DIAMOND - Pink theme
 - And more...
 
 ### 2. Plan CRUD Operations
@@ -164,10 +165,10 @@ The component automatically assigns color themes based on plan name:
 - Module-level select all/clear
 
 **Visual Indicators:**
-- 🟢 Green: Module has all permissions assigned
-- 🔵 Blue: Module has some existing permissions
-- 🟡 Yellow: Module has only newly selected permissions
-- ⚪ Gray: Module has no permissions
+- Green: Module has all permissions assigned
+- Blue: Module has some existing permissions
+- Yellow: Module has only newly selected permissions
+- Gray: Module has no permissions
 
 **Bulk Operations:**
 - Select all permissions in a module
@@ -352,9 +353,9 @@ permissionApi.getAllPermissions()
 - Hover actions
 
 **Card Actions:**
-- ✏️ Edit Plan
-- 🔐 Manage Permissions
-- 🗑️ Delete Plan
+- Edit Plan
+- Manage Permissions
+- Delete Plan
 
 ### 2. Plan Form Modal
 
@@ -559,7 +560,7 @@ The component uses Tailwind CSS with:
 ---
 
 **Next Steps:**
-- 📖 [MS1 Server - Plan Management Module](../ms1-server/modules/plan-management)
-- 🔧 [MS1 Client - Folder Structure](../folder-structure)
-- 🎨 [MS1 Client - Components Overview](./overview)
+- [MS1 Server - Plan Management Module](../../ms1-server/modules/plan-management)
+- [MS1 Client - Folder Structure](../folder-structure)
+- [MS1 Client - Components Overview](../components)
 

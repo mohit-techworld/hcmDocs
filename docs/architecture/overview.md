@@ -1,6 +1,7 @@
 ---
 title: System Architecture
 sidebar_position: 1
+description: "This page walks through the runtime layout of the HCM platform, highlights the responsibilities of each layer, and explains how requests move between."
 ---
 
 # System Architecture
@@ -13,7 +14,7 @@ This page walks through the runtime layout of the HCM platform, highlights the r
 flowchart LR
     subgraph Client
         Browser[React SPA<br/>Tailwind + MUI]
-        Desktop[Electron Shell (optional)]
+        Desktop["Electron Shell (optional)"]
         Mobile[Android/iOS WebView]
     end
 

@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 6: API Reference"
 sidebar_position: 12
+description: "Performance Management Module - Part 6: API Reference — HCM platform documentation."
 ---
 
 # Performance Management Module - Part 6: API Reference
@@ -13,7 +14,7 @@ This document provides a complete API reference for the Performance Management m
 2. [Authentication](#authentication)
 3. [KPI Set API](#kpi-set-api)
 4. [Rating API](#rating-api)
-5. [Analytics API](#analytics-api)
+5. [Analytics API](#get-manager-team-analytics)
 6. [Error Codes](#error-codes)
 7. [Rate Limiting](#rate-limiting)
 

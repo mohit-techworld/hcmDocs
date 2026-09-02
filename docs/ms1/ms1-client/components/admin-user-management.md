@@ -1,6 +1,7 @@
 ---
 title: Admin User Management Component
 sidebar_position: 1
+description: "The Admin User Management components provide a React-based interface for user authentication, profile management, and user administration in MS1 Client."
 ---
 
 # Admin User Management Component (MS1 Client)
@@ -13,11 +14,11 @@ The Admin User Management components provide a React-based interface for user au
 
 The Admin User Management system consists of multiple React components that handle:
 
-- 🔐 **Authentication** – Login and logout functionality
-- 👤 **Profile Management** – View and update user profile
-- 🔑 **Password Management** – Change password, forgot password
-- 📊 **Active Sessions** – View and manage active login sessions
-- 👥 **User Administration** – Manage admin users (if implemented)
+- **Authentication** – Login and logout functionality
+- **Profile Management** – View and update user profile
+- **Password Management** – Change password, forgot password
+- **Active Sessions** – View and manage active login sessions
+- **User Administration** – Manage admin users (if implemented)
 
 ## Component Structure
 
@@ -339,5 +340,5 @@ Components use:
 
 **Next Steps:**
 - Read [MS1 Server - Admin User Management API](../../ms1-server/modules/admin-user-management) for backend details
-- See [Admin User Management Overview](../modules/admin-user-management-overview) for complete system understanding
+- See [Admin User Management Overview](../../modules/admin-user-management-overview) for complete system understanding
 

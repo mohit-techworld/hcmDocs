@@ -1,6 +1,7 @@
 ---
 title: Onboarding Management
 sidebar_position: 7
+description: "Onboarding bridges recruitment and active employment. It manages induction materials, checklist completion, and field worker onboarding dashboards."
 ---
 
 # Onboarding Management

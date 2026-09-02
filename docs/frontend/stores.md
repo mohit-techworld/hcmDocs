@@ -1,6 +1,7 @@
 ---
 title: Zustand Stores
 sidebar_position: 3
+description: "The SPA uses Zustand for state management. Stores live in src/store/ and represent domain-specific data caches plus UI state."
 ---
 
 # Zustand Stores

@@ -1,6 +1,7 @@
 ---
 title: "Notifications & Communication"
 sidebar_position: 10
+description: "This module unifies push notifications, email alerts, ticketing, and real-time socket updates to ensure employees receive timely information across the platform."
 ---
 
 # Notifications & Communication

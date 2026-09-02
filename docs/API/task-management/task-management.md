@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Task Management"
+description: "The Task Management API provides a comprehensive task assignment, tracking, and reporting system for organizational workflow management. It supports."
 ---
 
 # Task Management

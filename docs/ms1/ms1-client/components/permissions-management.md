@@ -1,6 +1,7 @@
 ---
 title: Permissions Management Component
 sidebar_position: 1
+description: "The Permissions Management component provides a React-based interface for managing system permissions."
 ---
 
 # Permissions Management Component (MS1 Client)
@@ -13,12 +14,12 @@ The Permissions Management component provides a React-based interface for managi
 
 The `Permission` component (`components/permission/Permission.jsx`) provides administrators with a comprehensive interface to:
 
-- 📋 View all permissions in a table/list
-- 🔍 Filter permissions by module
-- ➕ Create new permissions
-- ✏️ Edit existing permissions
-- 🗑️ Delete permissions
-- 📊 View permission details
+- View all permissions in a table/list
+- Filter permissions by module
+- Create new permissions
+- Edit existing permissions
+- Delete permissions
+- View permission details
 
 ## Component Structure
 
@@ -235,5 +236,5 @@ Components use:
 
 **Next Steps:**
 - Read [MS1 Server - Permissions Management API](../../ms1-server/modules/permissions-management) for backend details
-- See [Permissions Management Overview](../modules/permissions-management-overview) for complete system understanding
+- See [Permissions Management Overview](../../modules/permissions-management-overview) for complete system understanding
 

@@ -1,6 +1,7 @@
 ---
 title: Contact - Overview
 sidebar_position: 1
+description: "The Contact module handles contact form submissions from the public website. It processes contact inquiries, sends notification emails to administrators."
 ---
 
 # Contact - Complete Guide

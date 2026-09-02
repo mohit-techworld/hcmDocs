@@ -1,6 +1,7 @@
 ---
 title: Backend Utilities
 sidebar_position: 7
+description: "Utilities in src/utils provide reusable helpers for logging, email templating, salary calculations, S3 uploads, validation, and more. This document."
 ---
 
 # Backend Utilities

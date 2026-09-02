@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "KPI Management"
+description: "The KPI Set Management API allows organizations to define, manage, and track sets of Key Performance Indicators (KPIs) by designation (job role) and frequency (e.g."
 ---
 
 # KPI Management
 
 
-<!-- # KPI Set Management API Documentation -->
+{/* # KPI Set Management API Documentation */}
 
 ## System Overview
 

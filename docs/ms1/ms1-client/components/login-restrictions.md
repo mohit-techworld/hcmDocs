@@ -1,6 +1,7 @@
 ---
 title: Login Restrictions Component
 sidebar_position: 1
+description: "Login Restrictions Component (MS1 Client) — HCM platform documentation."
 ---
 
 # Login Restrictions Component (MS1 Client)
@@ -70,5 +71,5 @@ Uses login restrictions API services:
 
 **Next Steps:**
 - Read [MS1 Server - Login Restrictions API](../../ms1-server/modules/login-restrictions) for backend details
-- See [Login Restrictions Overview](../modules/login-restrictions-overview) for complete system understanding
+- See [Login Restrictions Overview](../../modules/login-restrictions-overview) for complete system understanding
 

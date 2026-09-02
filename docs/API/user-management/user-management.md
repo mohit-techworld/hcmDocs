@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "User Management"
+description: "The User Management API provides comprehensive functionality for retrieving and managing user information within the organization."
 ---
 
 # User Management
 
-<!-- # User Management API Documentation -->
+{/* # User Management API Documentation */}
 
 ## Overview
 

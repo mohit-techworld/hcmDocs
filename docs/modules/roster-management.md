@@ -1,3 +1,8 @@
+---
+title: "Roaster Management Module Documentation"
+description: "The Roaster Management Module (also referred to as \"Roster Management\") is a comprehensive shift scheduling and management system designed to efficiently."
+---
+
 # Roaster Management Module Documentation
 
 ## Table of Contents

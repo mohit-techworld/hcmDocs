@@ -1,6 +1,7 @@
 ---
 title: Employee Management
 sidebar_position: 5
+description: "Employee Management is the hub for HR operations—creating employees, assigning roles, managing subordinates, and viewing organisational data. It."
 ---
 
 # Employee Management

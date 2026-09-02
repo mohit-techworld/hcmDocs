@@ -1,6 +1,7 @@
 ---
 title: Frontend Services (API Clients)
 sidebar_position: 4
+description: "The src/service directory contains Axios-based clients that interact with backend REST endpoints. Each service module encapsulates endpoint URLs."
 ---
 
 # Frontend Services (API Clients)

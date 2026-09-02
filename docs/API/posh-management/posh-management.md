@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "Posh Management"
+description: "Posh Management — HCM platform documentation."
 ---
 
 # Posh Management
 
 
-<!-- # POSH Act Management API Documentation -->
+{/* # POSH Act Management API Documentation */}
 
 ## System Overview
 

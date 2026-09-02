@@ -1,6 +1,7 @@
 ---
 title: Feature Modules
 sidebar_position: 2
+description: "The HCM SPA mirrors backend domains. Each module combines a Zustand store, service wrapper, components, and pages."
 ---
 
 # Frontend Feature Modules

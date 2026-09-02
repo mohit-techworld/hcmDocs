@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "Recruitment Management"
+description: "The Recruitment Management API provides a comprehensive talent acquisition and recruitment tracking system."
 ---
 
 # Recruitment Management
 
 
-<!-- # Recruitment Management API Documentation -->
+{/* # Recruitment Management API Documentation */}
 
 ## System Overview
 

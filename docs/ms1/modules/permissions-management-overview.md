@@ -1,6 +1,7 @@
 ---
 title: Permissions Management - Overview
 sidebar_position: 1
+description: "The Permissions Management system provides a centralized way to define, manage, and assign granular permissions to users and plans. It enables role-based."
 ---
 
 # Permissions Management - Complete Guide

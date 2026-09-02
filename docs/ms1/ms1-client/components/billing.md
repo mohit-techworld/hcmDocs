@@ -1,6 +1,7 @@
 ---
 title: Billing Component
 sidebar_position: 1
+description: "The Billing component (components/Dashboard/SubscriptionManagement.jsx) provides a comprehensive billing dashboard for managing company subscriptions."
 ---
 
 # Billing Component (MS1 Client)
@@ -49,5 +50,5 @@ Uses billing API services:
 
 **Next Steps:**
 - Read [MS1 Server - Billing API](../../ms1-server/modules/billing) for backend details
-- See [Billing Overview](../modules/billing-overview) for complete system understanding
+- See [Billing Overview](../../modules/billing-overview) for complete system understanding
 

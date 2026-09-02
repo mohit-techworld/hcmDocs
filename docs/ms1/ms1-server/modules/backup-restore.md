@@ -1,6 +1,7 @@
 ---
 title: Backup & Restore API
 sidebar_position: 3
+description: "The Backup & Restore API provides comprehensive database backup and restore functionality. It supports creating backups, restoring databases, managing."
 ---
 
 # Backup & Restore API (Server-Side)
@@ -13,15 +14,15 @@ The Backup & Restore API provides comprehensive database backup and restore func
 
 ## Core Features
 
-- ✅ **Manual Backups** - Create backups on demand
-- ✅ **Automated Backups** - Scheduled backups with configurable frequency
-- ✅ **S3 Storage** - Backups stored securely in AWS S3
-- ✅ **Full Restore** - Restore entire databases
-- ✅ **Collection Restore** - Restore specific collections
-- ✅ **Admin Database Backup** - Protected admin database operations
-- ✅ **Backup History** - Track all backup operations
-- ✅ **Restore History** - Track all restore operations
-- ✅ **Settings Management** - Configure backup schedules and notifications
+- **Manual Backups** - Create backups on demand
+- **Automated Backups** - Scheduled backups with configurable frequency
+- **S3 Storage** - Backups stored securely in AWS S3
+- **Full Restore** - Restore entire databases
+- **Collection Restore** - Restore specific collections
+- **Admin Database Backup** - Protected admin database operations
+- **Backup History** - Track all backup operations
+- **Restore History** - Track all restore operations
+- **Settings Management** - Configure backup schedules and notifications
 
 ## Architecture
 
@@ -609,10 +610,10 @@ The `services/backupScheduler.service.js` handles automated backups:
 
 ## Related Documentation
 
-- 📖 [Backup & Restore Overview](../modules/backup-restore-overview)
-- 🎨 [MS1 Client - Backup & Restore Component](../../ms1-client/components/backup-restore)
-- 🔧 [MS1 Server Setup](../setup) - AWS S3 configuration
-- 📚 [Backup Settings Model](../../../ms1-server/modules/backup-restore#backup-settings)
+- [Backup & Restore Overview](../../modules/backup-restore-overview)
+- [MS1 Client - Backup & Restore Component](../../ms1-client/components/backup-restore)
+- [MS1 Server Setup](../setup) - AWS S3 configuration
+- [Backup Settings Model](#backup-settings-endpoints)
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Login History Component
 sidebar_position: 1
+description: "The Login History component (components/active-sessions/ActiveSessions.jsx) displays and manages user login sessions."
 ---
 
 # Login History Component (MS1 Client)
@@ -46,5 +47,5 @@ Uses login history API services:
 
 **Next Steps:**
 - Read [MS1 Server - Login History API](../../ms1-server/modules/login-history) for backend details
-- See [Login History Overview](../modules/login-history-overview) for complete system understanding
+- See [Login History Overview](../../modules/login-history-overview) for complete system understanding
 

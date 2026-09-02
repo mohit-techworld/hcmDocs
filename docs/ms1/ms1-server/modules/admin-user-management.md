@@ -1,6 +1,7 @@
 ---
 title: Admin User Management API
 sidebar_position: 1
+description: "The Admin User Management module handles all aspects of administrator user accounts, including registration, authentication, profile management, password."
 ---
 
 # Admin User Management API (Server-Side)
@@ -689,5 +690,5 @@ All endpoints follow a consistent error response format:
 
 **Next Steps:**
 - Read [MS1 Client - Admin User Management Component](../../ms1-client/components/admin-user-management) for frontend implementation
-- See [Admin User Management Overview](../modules/admin-user-management-overview) for complete system understanding
+- See [Admin User Management Overview](../../modules/admin-user-management-overview) for complete system understanding
 

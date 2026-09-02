@@ -1,6 +1,7 @@
 ---
 title: Notification Email Component
 sidebar_position: 1
+description: "The Notification Email component provides an interface for managing system notification email addresses."
 ---
 
 # Notification Email Component (MS1 Client)
@@ -44,5 +45,5 @@ Uses notification email API services:
 
 **Next Steps:**
 - Read [MS1 Server - Notification Email API](../../ms1-server/modules/notification-email) for backend details
-- See [Notification Email Overview](../modules/notification-email-overview) for complete system understanding
+- See [Notification Email Overview](../../modules/notification-email-overview) for complete system understanding
 

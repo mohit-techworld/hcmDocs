@@ -1,6 +1,7 @@
 ---
 title: "Resignation & Full & Final"
 sidebar_position: 19
+description: "The Resignation module manages resignation submissions, approvals, and final settlements (F&F). It coordinates between HR, managers, and finance to ensure."
 ---
 
 # Resignation & Full & Final Settlement

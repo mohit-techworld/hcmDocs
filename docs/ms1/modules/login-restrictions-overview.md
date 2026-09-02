@@ -1,6 +1,7 @@
 ---
 title: Login Restrictions - Overview
 sidebar_position: 1
+description: "The Login Restrictions module enables administrators to control and restrict user login access. It provides features to block users, limit concurrent."
 ---
 
 # Login Restrictions - Complete Guide

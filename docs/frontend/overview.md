@@ -1,6 +1,7 @@
 ---
 title: Frontend Architecture
 sidebar_position: 1
+description: "The HCM frontend is a React 18 single-page application scaffolded with Vite and styled with Tailwind CSS + Material UI. It integrates Socket.io, Firebase."
 ---
 
 # Frontend Architecture
@@ -38,7 +39,7 @@ hcmFrontend/
 
 ```mermaid
 graph TD
-    A[Vite Entry (main.jsx)] --> B[App.jsx]
+    A["Vite Entry (main.jsx)"] --> B[App.jsx]
     B --> C[SubdomainValidator]
     C --> D[RouterProvider]
     D --> E[Routes/Router.jsx]

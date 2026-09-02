@@ -1,6 +1,7 @@
 ---
 title: Admin User Management - Overview
 sidebar_position: 1
+description: "The Admin User Management system handles all aspects of administrator user accounts in MS1, including registration, authentication, profile management."
 ---
 
 # Admin User Management - Complete Guide

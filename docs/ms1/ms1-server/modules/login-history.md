@@ -1,6 +1,7 @@
 ---
 title: Login History API
 sidebar_position: 1
+description: "The Login History module tracks and manages user login sessions, device information, and session activity."
 ---
 
 # Login History API (Server-Side)
@@ -150,5 +151,5 @@ Uses `utils/userAgentParser.js` to extract:
 
 **Next Steps:**
 - Read [MS1 Client - Login History Component](../../ms1-client/components/login-history) for frontend details
-- See [Login History Overview](../modules/login-history-overview) for complete system understanding
+- See [Login History Overview](../../modules/login-history-overview) for complete system understanding
 

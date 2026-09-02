@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Designation Management"
+description: "The Designation Management API provides a simple yet robust system for managing job designations (job titles/roles) within an organization."
 ---
 
 # Designation Management
 
-<!-- # Designation Management API Documentation -->
+{/* # Designation Management API Documentation */}
 
 ## System Overview
 

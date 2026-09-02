@@ -1,15 +1,54 @@
-
+/**
+ * Sidebars.
+ *
+ * Three sidebars, so each audience gets a lane:
+ *   tutorialSidebar — guides: architecture, tenancy, backend, frontend, modules
+ *   apiSidebar      — the endpoint reference (previously had NO sidebar at all)
+ *   ms1Sidebar      — the MS1 control plane, server + client + overviews
+ */
 const sidebars = {
+  // ───────────────────────────── Guides ─────────────────────────────
   tutorialSidebar: [
     "intro",
     {
       type: "category",
-      label: "🏗️ Architecture",
+      label: "Getting Started",
+      className: "si-rocket",
+      collapsible: true,
+      collapsed: false,
+      items: [
+        "getting-started/project-setup",
+        "getting-started/installation",
+        "getting-started/environment-setup",
+      ],
+    },
+    {
+      type: "category",
+      label: "Architecture",
+      className: "si-layers",
+      collapsible: true,
+      collapsed: false,
       items: ["architecture/overview"],
     },
     {
       type: "category",
-      label: "⚙️ Backend",
+      label: "Multi-Tenancy",
+      className: "si-tenancy",
+      collapsible: true,
+      collapsed: false,
+      link: { type: "doc", id: "tenancy/index" },
+      items: [
+        "tenancy/request-headers",
+        "tenancy/errors",
+        "tenancy/query-scoping",
+        "tenancy/edge-routing",
+        "tenancy/device-auth",
+      ],
+    },
+    {
+      type: "category",
+      label: "Backend",
+      className: "si-backend",
       collapsible: true,
       collapsed: true,
       items: [
@@ -24,386 +63,8 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "📦 Modules",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        "modules/dashboard-analytics",
-        "modules/task-management",
-        "modules/payroll",
-        "modules/attendance-leave",
-        "modules/roster-management",
-        "modules/employee-management",
-        "modules/recruitment",
-        "modules/onboarding",
-        "modules/registration",
-        "modules/employee-engagement-detailed",
-        "modules/ticket-management",
-        "modules/compliance",
-        "modules/asset-inventory",
-        "modules/performance-management-part1-overview",
-        "modules/performance-management-part2-kpi-management",
-        "modules/performance-management-part3-rating-management",
-        "modules/performance-management-part4-bulk-operations",
-        "modules/performance-management-part5-dashboards-analytics",
-        "modules/performance-management-part6-api-reference",
-        "modules/performance",
-        "modules/productivity",
-        "modules/company-settings",
-        "modules/raci-analytics",
-        "modules/notifications",
-        "modules/geolocation",
-        "modules/resignation-fnf",
-        "modules/document-center",
-      ],
-    },
-    {
-      type: "category",
-      label: "🖥️ MS1 (Central Server)",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        "ms1/README",
-        {
-          type: "category",
-          label: "🖥️ MS1 Server",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/ms1-server/folder-structure",
-              label: "1. Folder Structure",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/setup",
-              label: "2. Setup & Installation",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "💻 MS1 Client",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/ms1-client/folder-structure",
-              label: "1. Folder Structure",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/setup",
-              label: "2. Setup & Installation",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "1. 🎯 Demo Management",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/demo-management-overview",
-              label: "1.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/demo-management",
-              label: "1.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/demo-management",
-              label: "1.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "2. 📋 Plan Management",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/plan-management-overview",
-              label: "2.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/plan-management",
-              label: "2.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/plan-management",
-              label: "2.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "3. 💾 Backup & Restore",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/backup-restore-overview",
-              label: "3.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/backup-restore",
-              label: "3.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/backup-restore",
-              label: "3.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "4. 👤 Admin User Management",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/admin-user-management-overview",
-              label: "4.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/admin-user-management",
-              label: "4.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/admin-user-management",
-              label: "4.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "5. 🔐 Permissions Management",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/permissions-management-overview",
-              label: "5.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/permissions-management",
-              label: "5.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/permissions-management",
-              label: "5.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "6. 🏢 Authentication (Company/Tenant)",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/authentication-overview",
-              label: "6.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/authentication",
-              label: "6.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/authentication",
-              label: "6.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "7. 💰 Billing",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/billing-overview",
-              label: "7.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/billing",
-              label: "7.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/billing",
-              label: "7.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "8. 📧 Contact",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/contact-overview",
-              label: "8.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/contact",
-              label: "8.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/contact",
-              label: "8.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "9. 💾 Database Management",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/database-management-overview",
-              label: "9.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/database-management",
-              label: "9.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/database-management",
-              label: "9.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "10. 🌐 Landing Demo",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/landing-demo-overview",
-              label: "10.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/landing-demo",
-              label: "10.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/landing-demo",
-              label: "10.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "11. 📊 Login History",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/login-history-overview",
-              label: "11.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/login-history",
-              label: "11.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/login-history",
-              label: "11.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "12. 📬 Notification Email",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/notification-email-overview",
-              label: "12.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/notification-email",
-              label: "12.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/notification-email",
-              label: "12.3 Client Component",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "13. 🔒 Login Restrictions",
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              id: "ms1/modules/login-restrictions-overview",
-              label: "13.1 Overview",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-server/modules/login-restrictions",
-              label: "13.2 Server API",
-            },
-            {
-              type: "doc",
-              id: "ms1/ms1-client/components/login-restrictions",
-              label: "13.3 Client Component",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "💻 Frontend",
+      label: "Frontend",
+      className: "si-frontend",
       collapsible: true,
       collapsed: true,
       items: [
@@ -417,14 +78,223 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "📚 Developer Guide",
-      items: ["getting-started/project-setup"],
+      label: "Modules",
+      className: "si-modules",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "modules/index" },
+      items: [
+        {
+          type: "category",
+          label: "Core HR",
+          className: "si-people",
+          collapsed: true,
+          items: [
+            "modules/employee-management",
+            "modules/onboarding",
+            "modules/registration",
+            "modules/resignation-fnf",
+            "modules/company-settings",
+          ],
+        },
+        {
+          type: "category",
+          label: "Time & Attendance",
+          className: "si-time",
+          collapsed: true,
+          items: [
+            "modules/attendance-leave",
+            "modules/roster-management",
+            "modules/geolocation",
+          ],
+        },
+        {
+          type: "category",
+          label: "Payroll",
+          className: "si-payroll",
+          collapsed: true,
+          items: ["modules/payroll"],
+        },
+        {
+          type: "category",
+          label: "Talent",
+          className: "si-talent",
+          collapsed: true,
+          items: [
+            "modules/recruitment",
+            "modules/performance",
+            "modules/performance-management-part1-overview",
+            "modules/performance-management-part2-kpi-management",
+            "modules/performance-management-part3-rating-management",
+            "modules/performance-management-part4-bulk-operations",
+            "modules/performance-management-part5-dashboards-analytics",
+            "modules/performance-management-part6-api-reference",
+            "modules/employee-engagement-detailed",
+          ],
+        },
+        {
+          type: "category",
+          label: "Work Management",
+          className: "si-work",
+          collapsed: true,
+          items: [
+            "modules/task-management",
+            "modules/ticket-management",
+            "modules/document-center",
+            "modules/asset-inventory",
+          ],
+        },
+        {
+          type: "category",
+          label: "Analytics",
+          className: "si-analytics",
+          collapsed: true,
+          items: [
+            "modules/dashboard-analytics",
+            "modules/productivity",
+            "modules/raci-analytics",
+          ],
+        },
+        {
+          type: "category",
+          label: "Platform",
+          className: "si-platform",
+          collapsed: true,
+          items: ["modules/notifications", "modules/compliance"],
+        },
+      ],
     },
     {
       type: "category",
-      label: "🚀 Operations",
+      label: "Operations",
+      className: "si-ops",
+      collapsible: true,
+      collapsed: true,
       items: ["devops/deployment"],
     },
+  ],
+
+  // ─────────────────────────── API reference ───────────────────────────
+  apiSidebar: [
+    "API/index",
+    {
+      type: "category",
+      label: "Identity & Access",
+      className: "si-identity",
+      collapsed: false,
+      items: [
+        "API/Authentication/auth-setup",
+        "API/user-management/user-management",
+        "API/subordinates-management/subordinates-management",
+      ],
+    },
+    {
+      type: "category",
+      label: "People Operations",
+      className: "si-peopleops",
+      collapsed: false,
+      items: [
+        "API/employee-onboarding/employee-onboarding",
+        "API/department-management/department-management",
+        "API/designation-management/designation-management",
+        "API/company-settings/company-settings",
+      ],
+    },
+    {
+      type: "category",
+      label: "Time & Attendance",
+      className: "si-time",
+      collapsed: false,
+      items: [
+        "API/attendance-management/attendance-management",
+        "API/leave-management/leave-management",
+        "API/holiday-management/holiday-management",
+      ],
+    },
+    {
+      type: "category",
+      label: "Work & Delivery",
+      className: "si-delivery",
+      collapsed: false,
+      items: [
+        "API/task-management/task-management",
+        "API/tickets-management/tickets-management",
+        "API/raci-management/raci-management",
+      ],
+    },
+    {
+      type: "category",
+      label: "Talent",
+      className: "si-talent",
+      collapsed: false,
+      items: [
+        "API/recruitment-management/recruitment-management",
+        "API/performance-management/kpi-management",
+        "API/performance-management/performance-ratings-managemenet",
+        "API/employee-engagement/employee-engagement",
+      ],
+    },
+    {
+      type: "category",
+      label: "Compliance",
+      className: "si-compliance",
+      collapsed: false,
+      items: ["API/posh-management/posh-management"],
+    },
+  ],
+
+  // ──────────────────────── MS1 (control plane) ────────────────────────
+  ms1Sidebar: [
+    "ms1/README",
+    {
+      type: "category",
+      label: "MS1 Server",
+      className: "si-backend",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "ms1/ms1-server/modules/index" },
+      items: [
+        { type: "doc", id: "ms1/ms1-server/folder-structure", label: "Folder Structure" },
+        { type: "doc", id: "ms1/ms1-server/setup", label: "Setup & Installation" },
+      ],
+    },
+    {
+      type: "category",
+      label: "MS1 Client",
+      className: "si-frontend",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "ms1/ms1-client/components/index" },
+      items: [
+        { type: "doc", id: "ms1/ms1-client/folder-structure", label: "Folder Structure" },
+        { type: "doc", id: "ms1/ms1-client/setup", label: "Setup & Installation" },
+      ],
+    },
+    ...[
+      ["Demo Management", "demo-management"],
+      ["Plan Management", "plan-management"],
+      ["Backup & Restore", "backup-restore"],
+      ["Admin User Management", "admin-user-management"],
+      ["Permissions Management", "permissions-management"],
+      ["Authentication", "authentication"],
+      ["Billing", "billing"],
+      ["Contact", "contact"],
+      ["Database Management", "database-management"],
+      ["Landing Demo", "landing-demo"],
+      ["Login History", "login-history"],
+      ["Notification Email", "notification-email"],
+      ["Login Restrictions", "login-restrictions"],
+    ].map(([label, slug]) => ({
+      type: "category",
+      label,
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { type: "doc", id: `ms1/modules/${slug}-overview`, label: "Overview" },
+        { type: "doc", id: `ms1/ms1-server/modules/${slug}`, label: "Server API" },
+        { type: "doc", id: `ms1/ms1-client/components/${slug}`, label: "Client Component" },
+      ],
+    })),
   ],
 };
 

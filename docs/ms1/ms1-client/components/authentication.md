@@ -1,6 +1,7 @@
 ---
 title: Authentication Component
 sidebar_position: 1
+description: "The Authentication components handle company registration, credential management, and subdomain-based routing in MS1 Client."
 ---
 
 # Authentication (Company/Tenant) Component (MS1 Client)
@@ -49,5 +50,5 @@ Uses auth API services:
 
 **Next Steps:**
 - Read [MS1 Server - Authentication API](../../ms1-server/modules/authentication) for backend details
-- See [Authentication Overview](../modules/authentication-overview) for complete system understanding
+- See [Authentication Overview](../../modules/authentication-overview) for complete system understanding
 

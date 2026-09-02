@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 4: Bulk Operations"
 sidebar_position: 10
+description: "This document provides a comprehensive guide to bulk rating operations, including Excel template generation, bulk uploads for current and past periods."
 ---
 
 # Performance Management Module - Part 4: Bulk Operations

@@ -1,6 +1,7 @@
 ---
 title: Payroll Lifecycle
 sidebar_position: 3
+description: "Payroll v2 orchestrates salary template configuration, statutory compliance, salary structure assignment, and payroll execution."
 ---
 
 # Payroll Lifecycle

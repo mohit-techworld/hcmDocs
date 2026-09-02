@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Overview
+description: "The HCM platform is a full-stack Human Resource Management solution that Razor Infotech uses to digitise the complete employee life cycle."
 ---
 
 # Human Capital Management Platform
@@ -24,14 +25,14 @@ This documentation set explains how the platform is organised, how data flows th
 ```mermaid
 graph LR
   subgraph Client
-    A[React SPA\n(Vite + Tailwind + MUI)]
+    A["React SPA<br/>(Vite + Tailwind + MUI)"]
     B[Zustand Stores]
     C[Firebase Messaging]
   end
   subgraph Backend
     G[Express API Gateway]
-    H[Socket.io\nChat + Notifications]
-    I[BullMQ Workers\nCron Jobs]
+    H["Socket.io<br/>Chat + Notifications"]
+    I["BullMQ Workers<br/>Cron Jobs"]
   end
   subgraph Data Plane
     J[(MongoDB)]

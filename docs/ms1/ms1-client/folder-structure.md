@@ -1,6 +1,7 @@
 ---
 title: MS1 Client - Folder Structure
 sidebar_position: 1
+description: "This document explains the folder structure of the MS1 Client (frontend) application. Understanding this structure will help you navigate the React."
 ---
 
 # MS1 Client - Folder Structure
@@ -96,7 +97,7 @@ hcmMs1Client/
 
 ## Detailed Folder Descriptions
 
-### 📄 Root Files
+### Root Files
 
 **`package.json`**
 - React dependencies
@@ -118,11 +119,11 @@ hcmMs1Client/
 - React root element
 - Meta tags
 
-### 📁 src/
+### src/
 
 Main source code directory.
 
-#### 📄 Core Files
+#### Core Files
 
 **`main.jsx`**
 - React app entry point
@@ -145,7 +146,7 @@ Main source code directory.
 - Tailwind imports
 - Custom styles
 
-#### 📁 components/
+#### components/
 
 React components organized by feature.
 
@@ -195,7 +196,7 @@ components/
 - Theme toggle
 - Layout wrapper
 
-#### 📁 services/
+#### services/
 
 API service functions that communicate with MS1 Server.
 
@@ -227,7 +228,7 @@ API service functions that communicate with MS1 Server.
 - Restore operations
 - Settings management
 
-#### 📁 context/
+#### context/
 
 React Context providers for global state.
 
@@ -236,7 +237,7 @@ React Context providers for global state.
 - Theme persistence
 - Theme toggle functionality
 
-#### 📁 utils/
+#### utils/
 
 Utility functions and helpers.
 
@@ -249,7 +250,7 @@ Utility functions and helpers.
 - Permission checking
 - Role validation
 
-### 📁 public/
+### public/
 
 Static files served directly.
 
@@ -258,7 +259,7 @@ Static files served directly.
 - Favicon
 - Other static assets
 
-### 📁 dist/
+### dist/
 
 Build output (generated, not in source control).
 
@@ -406,7 +407,7 @@ export default function FeatureComponent() {
 ---
 
 **Next Steps:**
-- 📖 [MS1 Client Setup Guide](./setup)
-- 🎨 [MS1 Client Components](./components)
-- 🔌 [API Integration](./api-integration)
+- [MS1 Client Setup Guide](./setup)
+- [MS1 Client Components](./components)
+- [API Integration](../ms1-server/modules)
 

@@ -1,6 +1,7 @@
 ---
 title: Performance Management
 sidebar_position: 8
+description: "Performance management covers KPIs/KRAs, ratings, feedback sessions, and goal progress tracking. It provides both employee and manager views of performance metrics."
 ---
 
 # Performance Management

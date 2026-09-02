@@ -1,6 +1,7 @@
 ---
 title: Authentication (Company/Tenant) API
 sidebar_position: 1
+description: "The Authentication module handles company/tenant creation, credential management, and subdomain-based routing for multi-tenant architecture."
 ---
 
 # Authentication (Company/Tenant) API (Server-Side)
@@ -157,5 +158,5 @@ Extracts subdomain from request host and attaches company to request:
 
 **Next Steps:**
 - Read [MS1 Client - Authentication Component](../../ms1-client/components/authentication) for frontend details
-- See [Authentication Overview](../modules/authentication-overview) for complete system understanding
+- See [Authentication Overview](../../modules/authentication-overview) for complete system understanding
 

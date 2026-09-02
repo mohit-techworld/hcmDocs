@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Subordinates Management"
+description: "Subordinates Management — HCM platform documentation."
 ---
 
 # Subordinates Management
 
-<!-- # Subordinates Management API Documentation -->
+{/* # Subordinates Management API Documentation */}
 
 ## Overview
 

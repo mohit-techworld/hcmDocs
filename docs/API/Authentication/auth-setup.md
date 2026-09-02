@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Authentication  Flow"
+description: "Complete guide to the HCM Authentication system with multi-device support, OTP verification, and secure password management."
 ---
 
 # Authentication  Flow
@@ -12,7 +14,7 @@ Complete guide to the HCM Authentication system with multi-device support, OTP v
 /api/v1/auth
 ```
 
-## 🔐 Authentication System Overview
+## Authentication System Overview
 
 The HCM authentication system supports:
 - **Multi-device login** (Android, iOS, Web, Desktop)
@@ -21,14 +23,14 @@ The HCM authentication system supports:
 - **Device-specific tokens** for session management
 - **Super admin registration** with secret key protection
 
-## 📱 Device Type Header
+## Device Type Header
 
 **All requests must include device type:**
 ```
 x-device-type: android | ios | web | desktop
 ```
 
-## 🔑 Environment Variables Required
+## Environment Variables Required
 
 ```env
 JWT_SECRET_KEY=your-jwt-secret-key
@@ -39,9 +41,9 @@ SUPERADMIN_SECRET_KEY=your-super-admin-secret
 
 ---
 
-## 🚀 API Endpoints
+## API Endpoints
 
-### 1. 👑 Register Super Admin
+### 1. Register Super Admin
 
 Creates the first super admin account with secret key validation.
 
@@ -123,7 +125,7 @@ Creates the first super admin account with secret key validation.
 
 ---
 
-### 2. 🔐 Login
+### 2. Login
 
 Authenticates user and returns device-specific JWT token. Supports OTP verification.
 
@@ -213,7 +215,7 @@ x-device-type: android | ios | web | desktop
 
 ---
 
-### 3. 📱 Verify OTP
+### 3. Verify OTP
 
 Verifies OTP and completes login process.
 
@@ -274,7 +276,7 @@ x-device-type: android | ios | web | desktop
 
 ---
 
-### 4. 🔄 Resend OTP
+### 4. Resend OTP
 
 Resends OTP for login verification.
 
@@ -312,7 +314,7 @@ Resends OTP for login verification.
 
 ---
 
-### 5. 📧 Password Reset Request
+### 5. Password Reset Request
 
 Sends password reset email with secure token. Rate limited to 4 requests per day.
 
@@ -359,7 +361,7 @@ Sends password reset email with secure token. Rate limited to 4 requests per day
 
 ---
 
-### 6. 🔒 Reset Password
+### 6. Reset Password
 
 Resets password using the token from email.
 
@@ -408,7 +410,7 @@ Resets password using the token from email.
 
 ---
 
-### 7. ✅ Check Authorization
+### 7. Check Authorization
 
 Validates JWT token and returns user information.
 
@@ -472,7 +474,7 @@ x-device-type: android | ios | web | desktop
 
 ---
 
-### 8. 🚪 Logout
+### 8. Logout
 
 Clears device-specific token and logs out user.
 
@@ -522,7 +524,7 @@ x-device-type: android | ios | web | desktop
 
 ---
 
-## 🛡️ Security Features
+## Security Features
 
 ### Device-Specific Tokens
 Each user can have different tokens for different devices:
@@ -548,7 +550,7 @@ Each user can have different tokens for different devices:
 
 ---
 
-## 🔧 Database Models
+## Database Models
 
 ### User Model Key Fields
 ```javascript
@@ -588,7 +590,7 @@ Each user can have different tokens for different devices:
 
 ---
 
-## 💻 Frontend Integration Examples
+## Frontend Integration Examples
 
 ### 1. Super Admin Registration
 ```javascript
@@ -805,7 +807,7 @@ const logout = async () => {
 
 ---
 
-## 🔄 Authentication Flow Diagrams
+## Authentication Flow Diagrams
 
 ### Login Flow
 ```
@@ -847,7 +849,7 @@ User → Reset Request → Server
 
 ---
 
-## 🛠️ Testing Guide
+## Testing Guide
 
 ### Test Super Admin Registration
 ```bash
@@ -884,7 +886,7 @@ curl -X GET http://localhost:6006/api/v1/auth/check-authorization \
 
 ---
 
-## 📞 Support & Troubleshooting
+## Support & Troubleshooting
 
 ### Common Issues
 

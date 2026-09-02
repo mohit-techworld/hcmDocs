@@ -1,12 +1,13 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
+import Icon from "@site/src/components/Icon";
 import styles from "./styles.module.css";
 
 const FeatureList = [
   {
     title: "Employee Management",
-    icon: "👥",
+    icon: "users",
     description: (
       <>
         Complete employee lifecycle from onboarding to exit. Manage profiles,
@@ -18,7 +19,7 @@ const FeatureList = [
   },
   {
     title: "Attendance & Time Tracking",
-    icon: "⏰",
+    icon: "clock",
     description: (
       <>
         Real-time attendance tracking with biometric integration, geofencing,
@@ -30,7 +31,7 @@ const FeatureList = [
   },
   {
     title: "Payroll Management",
-    icon: "💰",
+    icon: "wallet",
     description: (
       <>
         Comprehensive payroll processing with statutory compliance
@@ -42,7 +43,7 @@ const FeatureList = [
   },
   {
     title: "Leave Management",
-    icon: "📅",
+    icon: "calendar",
     description: (
       <>
         Flexible leave management system with configurable leave types, approval
@@ -54,7 +55,7 @@ const FeatureList = [
   },
   {
     title: "Task Management",
-    icon: "✅",
+    icon: "task",
     description: (
       <>
         Efficient task assignment and tracking with daily task management,
@@ -66,7 +67,7 @@ const FeatureList = [
   },
   {
     title: "Ticket & POSH Management",
-    icon: "🎫",
+    icon: "ticket",
     description: (
       <>
         Streamlined ticket management system for issue tracking, resolution
@@ -78,7 +79,7 @@ const FeatureList = [
   },
   {
     title: "Performance Management",
-    icon: "🎯",
+    icon: "target",
     description: (
       <>
         Advanced performance evaluation with KPI/KRA setting, quantitative &
@@ -90,7 +91,7 @@ const FeatureList = [
   },
   {
     title: "Recruitment Management",
-    icon: "🔍",
+    icon: "search",
     description: (
       <>
         End-to-end recruitment process from MRF creation to candidate
@@ -102,7 +103,7 @@ const FeatureList = [
   },
   {
     title: "Roster Management",
-    icon: "📋",
+    icon: "roster",
     description: (
       <>
         Intelligent shift scheduling and roster management with swap request
@@ -114,7 +115,7 @@ const FeatureList = [
   },
   {
     title: "Engagement & Synergy",
-    icon: "💬",
+    icon: "chat",
     description: (
       <>
         Foster collaboration with engagement feeds, real-time chat,
@@ -122,11 +123,11 @@ const FeatureList = [
         interaction and team synergy across the organization.
       </>
     ),
-    link: "/docs/modules/engagement-chat",
+    link: "/docs/modules/employee-engagement-detailed",
   },
   {
     title: "Productivity Analytics",
-    icon: "📊",
+    icon: "chart",
     description: (
       <>
         Advanced productivity tracking with productivity lenses, team
@@ -138,7 +139,7 @@ const FeatureList = [
   },
   {
     title: "RACI Analytics",
-    icon: "🏢",
+    icon: "hierarchy",
     description: (
       <>
         Comprehensive RACI (Responsible, Accountable, Consulted, Informed)
@@ -150,7 +151,7 @@ const FeatureList = [
   },
   {
     title: "Document Center",
-    icon: "📄",
+    icon: "doc",
     description: (
       <>
         Centralized document management with secure sharing, letterhead
@@ -162,7 +163,7 @@ const FeatureList = [
   },
   {
     title: "Inventory & Assets",
-    icon: "📦",
+    icon: "box",
     description: (
       <>
         Complete asset inventory management with category management, vendor
@@ -174,7 +175,7 @@ const FeatureList = [
   },
   {
     title: "Resignation & F&F",
-    icon: "👋",
+    icon: "wave",
     description: (
       <>
         Streamlined resignation workflow with submission, approval chains, full
@@ -186,7 +187,7 @@ const FeatureList = [
   },
   {
     title: "Geolocation Tracking",
-    icon: "📍",
+    icon: "pin",
     description: (
       <>
         Real-time location tracking for field workers with visit management,
@@ -198,7 +199,7 @@ const FeatureList = [
   },
   {
     title: "Company Settings",
-    icon: "⚙️",
+    icon: "settings",
     description: (
       <>
         Comprehensive company configuration including hierarchy management,
@@ -210,7 +211,7 @@ const FeatureList = [
   },
   {
     title: "Role-Based Dashboards",
-    icon: "📈",
+    icon: "trending",
     description: (
       <>
         Customized dashboards for different roles - Super Admin, HR, Manager,
@@ -226,7 +227,9 @@ function Feature({ icon, title, description, link }) {
   return (
     <div className={clsx("col col--4", styles.featureCard)}>
       <Link to={link} className={styles.featureLink}>
-        <div className={styles.featureIcon}>{icon}</div>
+        <div className={styles.featureIcon}>
+          <Icon name={icon} size={26} />
+        </div>
         <div className={styles.featureContent}>
           <Heading as="h3" className={styles.featureTitle}>
             {title}

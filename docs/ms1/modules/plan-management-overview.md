@@ -1,6 +1,7 @@
 ---
 title: Plan Management - Overview
 sidebar_position: 1
+description: "The Plan Management system allows administrators to create, manage, and configure pricing plans with associated permissions. It provides a complete."
 ---
 
 # Plan Management - Complete Guide
@@ -191,10 +192,10 @@ User Action (Client) → API Call → Server Processing → Database → Permiss
 
 ## Next Steps
 
-1. 📖 Read [MS1 Server - Plan Management](../ms1-server/modules/plan-management) for backend details
-2. 🎨 Read [MS1 Client - Plan Management Component](../ms1-client/components/plan-management) for frontend details
-3. 🔧 Check [MS1 Server Folder Structure](../ms1-server/folder-structure) to understand code organization
-4. 🖥️ Check [MS1 Client Folder Structure](../ms1-client/folder-structure) to understand component structure
+1. Read [MS1 Server - Plan Management](../ms1-server/modules/plan-management) for backend details
+2. Read [MS1 Client - Plan Management Component](../ms1-client/components/plan-management) for frontend details
+3. Check [MS1 Server Folder Structure](../ms1-server/folder-structure) to understand code organization
+4. Check [MS1 Client Folder Structure](../ms1-client/folder-structure) to understand component structure
 
 ---
 

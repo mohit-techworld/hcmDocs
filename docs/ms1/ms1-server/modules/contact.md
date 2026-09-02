@@ -1,6 +1,7 @@
 ---
 title: Contact API
 sidebar_position: 1
+description: "The Contact module handles contact form submissions from the public website with queue-based email delivery."
 ---
 
 # Contact API (Server-Side)
@@ -111,5 +112,5 @@ Uses `express-validator` for input validation:
 
 **Next Steps:**
 - Read [MS1 Client - Contact Component](../../ms1-client/components/contact) for frontend details
-- See [Contact Overview](../modules/contact-overview) for complete system understanding
+- See [Contact Overview](../../modules/contact-overview) for complete system understanding
 

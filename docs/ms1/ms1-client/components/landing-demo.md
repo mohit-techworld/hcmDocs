@@ -1,6 +1,7 @@
 ---
 title: Landing Demo Component
 sidebar_position: 1
+description: "The Landing Demo component (components/landing-demo/LandingDemo.jsx) provides a demo request form for the public landing page."
 ---
 
 # Landing Demo Component (MS1 Client)
@@ -42,5 +43,5 @@ Uses landing demo API services:
 
 **Next Steps:**
 - Read [MS1 Server - Landing Demo API](../../ms1-server/modules/landing-demo) for backend details
-- See [Landing Demo Overview](../modules/landing-demo-overview) for complete system understanding
+- See [Landing Demo Overview](../../modules/landing-demo-overview) for complete system understanding
 

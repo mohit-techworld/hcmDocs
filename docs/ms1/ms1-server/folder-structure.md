@@ -1,6 +1,7 @@
 ---
 title: MS1 Server - Folder Structure
 sidebar_position: 1
+description: "This document explains the folder structure of the MS1 Server (backend) application."
 ---
 
 # MS1 Server - Folder Structure
@@ -133,7 +134,7 @@ hcmMs1Server/
 
 ## Detailed Folder Descriptions
 
-### 📄 Root Files
+### Root Files
 
 **`app.js`**
 - Main application entry point
@@ -147,7 +148,7 @@ hcmMs1Server/
 - NPM scripts
 - Project metadata
 
-### 📁 config/
+### config/
 
 Configuration files for the application.
 
@@ -159,7 +160,7 @@ Configuration files for the application.
 - User role definitions
 - Permission mappings
 
-### 📁 controller/
+### controller/
 
 Contains all business logic controllers. Each controller handles requests for a specific feature.
 
@@ -174,7 +175,7 @@ Contains all business logic controllers. Each controller handles requests for a 
 Request → Route → Controller → Model → Database → Response
 ```
 
-### 📁 model/
+### model/
 
 Mongoose schemas that define database structure.
 
@@ -189,7 +190,7 @@ Mongoose schemas that define database structure.
 - `demo.model.js` - Demo requests
 - `adminUser.model.js` - Admin users
 
-### 📁 routes/
+### routes/
 
 API route definitions that map URLs to controllers.
 
@@ -203,7 +204,7 @@ API route definitions that map URLs to controllers.
 router.post('/backup/:identifier', adminVerifyToken, controller.backupDatabase);
 ```
 
-### 📁 middleware/
+### middleware/
 
 Express middleware functions.
 
@@ -212,7 +213,7 @@ Express middleware functions.
 - `rateLimit.middleware.js` - Prevents API abuse
 - `subdomain.middleware.js` - Handles subdomain routing
 
-### 📁 utils/
+### utils/
 
 Reusable utility functions and services.
 
@@ -221,7 +222,7 @@ Reusable utility functions and services.
 - `database.utils.js` - Database operations
 - `demoEmailService.js` - Demo email templates
 
-### 📁 services/
+### services/
 
 Background services that run independently.
 
@@ -230,7 +231,7 @@ Background services that run independently.
 - Runs on schedule
 - Sends notifications
 
-### 📁 validation/
+### validation/
 
 Input validation using express-validator.
 
@@ -239,7 +240,7 @@ Input validation using express-validator.
 - Returns error messages
 - Ensures data integrity
 
-### 📁 email-templates/
+### email-templates/
 
 HTML email templates for various notifications.
 
@@ -345,7 +346,7 @@ Controller (controller/[feature].controller.js)
 ---
 
 **Next Steps:**
-- 📖 [MS1 Server Setup Guide](./setup)
-- 🔧 [MS1 Server Configuration](./configuration)
-- 📚 [MS1 Server Modules](./modules)
+- [MS1 Server Setup Guide](./setup)
+- [MS1 Server Setup & Installation](./setup)
+- [MS1 Server Modules](./modules)
 

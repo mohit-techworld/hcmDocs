@@ -1,6 +1,7 @@
 ---
 title: Demo Management - Overview
 sidebar_position: 1
+description: "Demo Management - Complete Guide — HCM platform documentation."
 ---
 
 # Demo Management - Complete Guide
@@ -169,10 +170,10 @@ User Action (Client) → API Call → Server Processing → Database → Respons
 
 ## Next Steps
 
-1. 📖 Read [MS1 Server - Demo Management](../ms1-server/modules/demo-management) for backend details
-2. 🎨 Read [MS1 Client - Demo Management Component](../ms1-client/components/demo-management) for frontend details
-3. 🔧 Check [MS1 Server Folder Structure](../ms1-server/folder-structure) to understand code organization
-4. 🖥️ Check [MS1 Client Folder Structure](../ms1-client/folder-structure) to understand component structure
+1. Read [MS1 Server - Demo Management](../ms1-server/modules/demo-management) for backend details
+2. Read [MS1 Client - Demo Management Component](../ms1-client/components/demo-management) for frontend details
+3. Check [MS1 Server Folder Structure](../ms1-server/folder-structure) to understand code organization
+4. Check [MS1 Client Folder Structure](../ms1-client/folder-structure) to understand component structure
 
 ---
 

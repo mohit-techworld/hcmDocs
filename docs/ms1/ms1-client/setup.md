@@ -1,6 +1,7 @@
 ---
 title: MS1 Client - Setup & Installation
 sidebar_position: 2
+description: "This guide will help you set up the MS1 Client (frontend) quickly and start working on the project."
 ---
 
 # MS1 Client - Setup & Installation Guide
@@ -73,10 +74,10 @@ http://localhost:5173
 
 ## Verification
 
-1. ✅ Development server is running
-2. ✅ Browser opens automatically
-3. ✅ Login page is visible
-4. ✅ Can connect to MS1 Server API
+1. Development server is running
+2. Browser opens automatically
+3. Login page is visible
+4. Can connect to MS1 Server API
 
 ## Project Structure
 
@@ -250,10 +251,10 @@ Use browser Network tab:
 
 ## Next Steps
 
-1. ✅ Client is running
-2. 📖 Read [MS1 Client Folder Structure](./folder-structure) to understand the codebase
-3. 🎨 Read [MS1 Client Components](./components) documentation
-4. 🔌 Check [API Integration](./api-integration) guide
+1. Client is running
+2. Read [MS1 Client Folder Structure](./folder-structure) to understand the codebase
+3. Read [MS1 Client Components](./components) documentation
+4. Check [API Integration](../ms1-server/modules) guide
 
 ## Production Build
 

@@ -1,6 +1,7 @@
 ---
 title: "RACI & Company Analytics"
 sidebar_position: 16
+description: "The RACI module maps responsibilities (Responsible, Accountable, Consulted, Informed) across business and operations, providing analytics dashboards for leadership."
 ---
 
 # RACI & Company Analytics

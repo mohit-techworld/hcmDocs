@@ -1,6 +1,7 @@
 ---
 title: MS1 Documentation - Complete Guide
 sidebar_position: 0
+description: "Welcome to the MS1 (Central Server) documentation! This comprehensive guide covers everything you need to know about MS1, from quick setup to detailed."
 ---
 
 # MS1 Documentation - Complete Guide
@@ -9,7 +10,7 @@ Welcome to the MS1 (Central Server) documentation! This comprehensive guide cove
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 Get up and running with MS1 (Central Server) in **10 minutes**. This guide will help you set up both the server and client so you can start working immediately.
 
@@ -195,7 +196,7 @@ Use browser DevTools → Network tab to see all API calls.
 
 ---
 
-## 📖 MS1 (Central Server) - Overview
+## MS1 (Central Server) - Overview
 
 MS1 (Central Server) is the administrative and management system for the Human Capital Management (HCM) platform. It consists of two main components: **MS1 Server** (backend) and **MS1 Client** (frontend), working together to provide a comprehensive admin panel for managing tenants, plans, demos, backups, and system configurations.
 
@@ -203,13 +204,13 @@ MS1 (Central Server) is the administrative and management system for the Human C
 
 MS1 is the central management system that allows administrators to:
 
-- 🏢 **Manage Companies/Tenants** – Create, configure, and manage multi-tenant company databases
-- 📦 **Manage Pricing Plans** – Create and configure subscription plans with permissions
-- 🎯 **Handle Demo Requests** – Process and schedule product demonstration requests
-- 💾 **Backup & Restore** – Create backups and restore company databases
-- 👥 **User Management** – Manage admin users and their permissions
-- 📊 **Analytics & Reports** – View system statistics and reports
-- ⚙️ **System Configuration** – Configure system-wide settings
+- **Manage Companies/Tenants** – Create, configure, and manage multi-tenant company databases
+- **Manage Pricing Plans** – Create and configure subscription plans with permissions
+- **Handle Demo Requests** – Process and schedule product demonstration requests
+- **Backup & Restore** – Create backups and restore company databases
+- **User Management** – Manage admin users and their permissions
+- **Analytics & Reports** – View system statistics and reports
+- **System Configuration** – Configure system-wide settings
 
 ### System Architecture
 
@@ -386,7 +387,7 @@ MS1 System
 
 ---
 
-## 🎯 Start Here
+## Start Here
 
 ### For New Developers
 
@@ -407,7 +408,7 @@ MS1 System
    - Each module has Overview → Server API → Client Component
    - Start with module overviews
 
-## 📚 Documentation Structure
+## Documentation Structure
 
 ```
 MS1 (Central Server)
@@ -439,7 +440,7 @@ MS1 (Central Server)
     └── MS1 Client - Backup & Restore Component
 ```
 
-## 🗺️ Navigation Guide
+## Navigation Guide
 
 ### By Role
 
@@ -485,7 +486,7 @@ MS1 (Central Server)
 - [MS1 Client Setup](./ms1-client/setup)
 - Component documentation
 
-## 📖 Reading Order Recommendations
+## Reading Order Recommendations
 
 ### Complete Beginner Path
 
@@ -511,7 +512,7 @@ MS1 (Central Server)
 2. Module Overview pages - Understand features
 3. Skip technical implementation details
 
-## 🔍 Finding Information
+## Finding Information
 
 ### I want to...
 
@@ -536,7 +537,7 @@ MS1 (Central Server)
 **...configure settings:**
 → Setup guides or Module API docs
 
-## 💡 Tips for Reading
+## Tips for Reading
 
 1. **Start with Overviews** - They provide context
 2. **Use Visual Diagrams** - They explain complex flows
@@ -544,7 +545,7 @@ MS1 (Central Server)
 4. **Check API Reference** - Complete endpoint documentation
 5. **Read Both Sides** - Understanding server and client helps integration
 
-## 🎓 Learning Paths
+## Learning Paths
 
 ### Path 1: Complete Understanding (2-3 hours)
 
@@ -569,7 +570,7 @@ MS1 (Central Server)
 4. Study code examples
 5. Try implementing a feature
 
-## 📝 Documentation Features
+## Documentation Features
 
 ### Visual Diagrams
 - ASCII art diagrams for easy understanding
@@ -613,15 +614,15 @@ A: Check the API Reference section in Server API docs
 **Q: How do I create a backup?**
 A: [Backup & Restore Overview](./modules/backup-restore-overview)
 
-## 🎯 Quick Links
+## Quick Links
 
-- 🚀 Quick Start (above) - Get running fast
-- 📖 Overview (above) - System introduction
-- 📁 [Server Folder Structure](./ms1-server/folder-structure) - Code organization
-- 📁 [Client Folder Structure](./ms1-client/folder-structure) - Component organization
-- 🎯 [Demo Management](./modules/demo-management-overview) - Demo requests
-- 💰 [Plan Management](./modules/plan-management-overview) - Pricing plans
-- 💾 [Backup & Restore](./modules/backup-restore-overview) - Database backups
+- Quick Start (above) - Get running fast
+- Overview (above) - System introduction
+- [Server Folder Structure](./ms1-server/folder-structure) - Code organization
+- [Client Folder Structure](./ms1-client/folder-structure) - Component organization
+- [Demo Management](./modules/demo-management-overview) - Demo requests
+- [Plan Management](./modules/plan-management-overview) - Pricing plans
+- [Backup & Restore](./modules/backup-restore-overview) - Database backups
 
 ---
 

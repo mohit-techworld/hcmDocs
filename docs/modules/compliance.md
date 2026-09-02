@@ -1,6 +1,7 @@
 ---
 title: "Compliance & Governance"
 sidebar_position: 6
+description: "Compliance modules address statutory obligations (POSH, disciplinary actions), policy distribution, grievance handling, and reporting. They ensure legal."
 ---
 
 # Compliance & Governance

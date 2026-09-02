@@ -1,6 +1,7 @@
 ---
 title: Recruitment Module
 sidebar_position: 4
+description: "The Hiring Hub is the recruitment part of your HRMS Human Maximizer."
 ---
 
 # Hiring Hub Module – Documentation

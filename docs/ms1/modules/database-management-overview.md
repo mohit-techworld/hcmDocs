@@ -1,6 +1,7 @@
 ---
 title: Database Management - Overview
 sidebar_position: 1
+description: "The Database Management module handles the creation, deletion, and management of company-specific MongoDB databases. It enables multi-tenant architecture."
 ---
 
 # Database Management - Complete Guide

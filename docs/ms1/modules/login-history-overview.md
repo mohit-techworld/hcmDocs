@@ -1,6 +1,7 @@
 ---
 title: Login History - Overview
 sidebar_position: 1
+description: "The Login History module tracks and manages user login sessions. It records login attempts, device information, IP addresses, and session activity."
 ---
 
 # Login History - Complete Guide

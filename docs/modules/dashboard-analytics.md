@@ -1,6 +1,7 @@
 ---
 title: "Dashboards & Analytics"
 sidebar_position: 1
+description: "Dashboard modules surface KPI cards, heatmaps, and composite analytics across the platform. Three primary dashboards ship with the product:."
 ---
 
 # Dashboards & Analytics

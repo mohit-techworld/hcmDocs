@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
+title: "Employee Onboarding"
+description: "Complete guide to the HCM Employee Onboarding system with multi-step registration, verification workflow, and manager approval process."
 ---
 
 # Employee Onboarding
 
 
-<!-- # Registration API - Employee Onboarding Documentation -->
+{/* # Registration API - Employee Onboarding Documentation */}
 
 Complete guide to the HCM Employee Onboarding system with multi-step registration, verification workflow, and manager approval process.
 
@@ -14,15 +16,15 @@ Complete guide to the HCM Employee Onboarding system with multi-step registratio
 /api/v1/registration
 ```
 
-## 🎯 System Overview
+## System Overview
 
 The HCM onboarding system is a comprehensive multi-step process that involves:
 
-### **👥 Two User Types:**
+### ** Two User Types:**
 - **Employee**: Completes registration forms using guest authentication
 - **Manager**: Reviews and approves employees using full authentication
 
-### **📋 Registration Flow:**
+### ** Registration Flow:**
 1. **Manager** adds employee basic details → Password setup email sent
 2. **Employee** sets password → Can login to registration system
 3. **Employee** completes multi-step onboarding form
@@ -31,15 +33,15 @@ The HCM onboarding system is a comprehensive multi-step process that involves:
 6. **If approved**: Employee transferred to main User collection
 7. **If rejected**: Employee can resubmit with corrections
 
-### **🔐 Authentication:**
+### ** Authentication:**
 - **Guest Token**: For employees during registration (`JWT_SECRET_FOR_GUEST`)
 - **Full Token**: For managers and approved employees (`JWT_SECRET_KEY`)
 
 ---
 
-## 📝 Employee Registration Process
+## Employee Registration Process
 
-### 1. 🔑 Set Password (Initial Setup)
+### 1. Set Password (Initial Setup)
 
 Employee receives email with password setup link and creates their password.
 
@@ -88,7 +90,7 @@ Employee receives email with password setup link and creates their password.
 
 ---
 
-### 2. 🔐 Login (Guest Authentication)
+### 2. Login (Guest Authentication)
 
 Employee logs into the registration system using guest authentication.
 
@@ -149,7 +151,7 @@ x-device-type: android | ios | web
 
 ---
 
-### 3. ✅ Verify Token
+### 3. Verify Token
 
 Validates guest token and returns user information.
 
@@ -178,7 +180,7 @@ x-device-type: android | ios | web
 
 ---
 
-### 4. 📋 Get Basic Details
+### 4. Get Basic Details
 
 Retrieves employee's basic information.
 
@@ -202,7 +204,7 @@ Retrieves employee's basic information.
 
 ---
 
-### 5. 🎓 Add Qualifications
+### 5. Add Qualifications
 
 Employee adds their educational qualifications.
 
@@ -259,7 +261,7 @@ Employee adds their educational qualifications.
 
 ---
 
-### 6. 💼 Add Experience
+### 6. Add Experience
 
 Employee adds their work experience and language skills.
 
@@ -311,7 +313,7 @@ Employee adds their work experience and language skills.
 
 ---
 
-### 7. 🏦 Personal & Bank Information
+### 7. Personal & Bank Information
 
 Employee adds personal identification and banking details.
 
@@ -349,7 +351,7 @@ Employee adds personal identification and banking details.
 
 ---
 
-### 8. 📱 Additional Information
+### 8. Additional Information
 
 Employee adds personal and emergency contact information.
 
@@ -389,7 +391,7 @@ Employee adds personal and emergency contact information.
 
 ---
 
-### 9. 🖼️ Upload Avatar
+### 9. Upload Avatar
 
 Employee uploads profile picture.
 
@@ -420,7 +422,7 @@ user_Avatar: [image file]
 
 ---
 
-### 10. 📄 Upload Documents
+### 10. Upload Documents
 
 Employee uploads required documents.
 
@@ -465,7 +467,7 @@ documents[2][file]: [file]
 
 ---
 
-### 11. 📊 Get Employee Sections
+### 11. Get Employee Sections
 
 Retrieves all sections of employee data for review.
 
@@ -534,7 +536,7 @@ Retrieves all sections of employee data for review.
 
 ---
 
-### 12. 📤 Submit for Verification
+### 12. Submit for Verification
 
 Employee submits completed profile for manager review.
 
@@ -555,7 +557,7 @@ Employee submits completed profile for manager review.
 
 ---
 
-### 13. 🚪 Logout
+### 13. Logout
 
 Clears guest authentication token.
 
@@ -577,9 +579,9 @@ x-device-type: android | ios | web
 
 ---
 
-## 👨‍💼 Manager Operations
+## Manager Operations
 
-### 14. ➕ Add New Employee
+### 14. Add New Employee
 
 Manager adds a new employee and sends password setup email.
 
@@ -641,7 +643,7 @@ Manager adds a new employee and sends password setup email.
 
 ---
 
-### 15. 📋 Get Employees by Status
+### 15. Get Employees by Status
 
 Manager retrieves employees filtered by verification status.
 
@@ -699,7 +701,7 @@ GET /emp-status/Pending?empid=MGR001&search=john&page=1&limit=5
 
 ---
 
-### 16. 🔍 Get Employee Section Details
+### 16. Get Employee Section Details
 
 Manager retrieves detailed employee information for review.
 
@@ -755,7 +757,7 @@ Manager retrieves detailed employee information for review.
 
 ---
 
-### 17. 📝 Send Remark
+### 17. Send Remark
 
 Manager sends message/remark to employee during review process.
 
@@ -785,7 +787,7 @@ Manager sends message/remark to employee during review process.
 
 ---
 
-### 18. 💬 Get Chat Messages
+### 18. Get Chat Messages
 
 Manager retrieves chat history with specific employee.
 
@@ -814,7 +816,7 @@ Manager retrieves chat history with specific employee.
 
 ---
 
-### 19. 👤 Get Added By Manager
+### 19. Get Added By Manager
 
 Retrieves who originally added the employee.
 
@@ -830,7 +832,7 @@ Retrieves who originally added the employee.
 
 ---
 
-### 20. 📊 Get Verification Status
+### 20. Get Verification Status
 
 Checks current verification status of employee.
 
@@ -851,7 +853,7 @@ Checks current verification status of employee.
 
 ---
 
-### 21. ✅ Mark User as Verified (Simple)
+### 21. Mark User as Verified (Simple)
 
 Manager updates employee verification status.
 
@@ -880,7 +882,7 @@ Manager updates employee verification status.
 
 ---
 
-### 22. ✅ Mark User as Verified (Advanced)
+### 22. Mark User as Verified (Advanced)
 
 Manager verifies employee with history tracking and auto-transfer to main system.
 
@@ -924,7 +926,7 @@ Authorization: Bearer <manager-token>
 
 ---
 
-### 23. 📋 Save Exit Details
+### 23. Save Exit Details
 
 Manager adds exit-related information for departing employees.
 
@@ -960,7 +962,7 @@ Manager adds exit-related information for departing employees.
 
 ---
 
-### 24. 🏥 Save Benefits and Verification
+### 24. Save Benefits and Verification
 
 Manager adds benefits and verification information.
 
@@ -1002,7 +1004,7 @@ Manager adds benefits and verification information.
 
 ---
 
-### 25. 💰 Update Employee Compensation
+### 25. Update Employee Compensation
 
 Manager updates compensation and access details for employee.
 
@@ -1055,7 +1057,7 @@ Manager updates compensation and access details for employee.
 
 ---
 
-## 🔄 Complete Registration Flow
+## Complete Registration Flow
 
 ### **Step-by-Step Process:**
 
@@ -1087,7 +1089,7 @@ graph TD
 
 ---
 
-## 🔐 Authentication & Security
+## Authentication & Security
 
 ### **Token Types:**
 
@@ -1126,7 +1128,7 @@ const fullToken = jwt.sign(
 
 ---
 
-## 📧 Email System
+## Email System
 
 ### **Email Templates:**
 
@@ -1153,7 +1155,7 @@ const transporter = nodemailer.createTransporter({
 
 ---
 
-## 📁 File Upload System
+## File Upload System
 
 ### **Supported File Types:**
 - **Images**: JPEG, PNG, JPG, WebP
@@ -1176,7 +1178,7 @@ document_${empid}_${index}
 
 ---
 
-## 💬 Chat System
+## Chat System
 
 ### **Room ID Generation:**
 ```javascript
@@ -1202,7 +1204,7 @@ const getRoomId = (user1, user2) => {
 
 ---
 
-## 🔧 Development Examples
+## Development Examples
 
 ### **Frontend Integration:**
 
@@ -1329,7 +1331,7 @@ const verifyEmployee = async (empid, status, remarks) => {
 
 ---
 
-## 🧪 Testing Guide
+## Testing Guide
 
 ### **Test Employee Registration:**
 ```bash
@@ -1378,7 +1380,7 @@ curl -X POST http://localhost:6006/api/v1/registration/qualifications/EMP001 \
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### **Registration Collection:**
 ```javascript
@@ -1438,7 +1440,7 @@ curl -X POST http://localhost:6006/api/v1/registration/qualifications/EMP001 \
 
 ---
 
-## 🚨 Error Handling
+## Error Handling
 
 ### **Common Error Responses:**
 
@@ -1469,7 +1471,7 @@ curl -X POST http://localhost:6006/api/v1/registration/qualifications/EMP001 \
 
 ---
 
-## 🔄 Status Workflow
+## Status Workflow
 
 ### **Employee Verification States:**
 

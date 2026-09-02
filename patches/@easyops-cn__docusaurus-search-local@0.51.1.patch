@@ -1,0 +1,39 @@
+diff --git a/dist/client/client/theme/searchByWorker.js b/dist/client/client/theme/searchByWorker.js
+index 5ceff29938e7235473b02dfa903c36ed4848bb12..a1abf80f01b50bba919470ef09c699bb54f73f1a 100644
+--- a/dist/client/client/theme/searchByWorker.js
++++ b/dist/client/client/theme/searchByWorker.js
+@@ -1,7 +1,13 @@
+ import * as Comlink from "comlink";
++// PATCHED: upstream gates the index fetch and the search itself on
++// `process.env.NODE_ENV === "production"`, so search on the dev server always
++// returned [] and the UI printed "The search index is only available when you
++// run docusaurus build!". The guards are removed here. The index is supplied
++// in dev by `pnpm search:index` (see scripts/dev-search-index.cjs); production
++// behaviour is unchanged, since postBuild still writes the real index.
+ let remoteWorkerPromise;
+ function getRemoteWorker() {
+-    if (process.env.NODE_ENV === "production" && !remoteWorkerPromise) {
++    if (!remoteWorkerPromise) {
+         remoteWorkerPromise = (async () => {
+             const Remote = Comlink.wrap(new Worker(new URL("./worker.js", import.meta.url)));
+             return await new Remote();
+@@ -10,15 +16,10 @@ function getRemoteWorker() {
+     return remoteWorkerPromise;
+ }
+ export async function fetchIndexesByWorker(baseUrl, searchContext) {
+-    if (process.env.NODE_ENV === "production") {
+-        const remoteWorker = await getRemoteWorker();
+-        await remoteWorker.fetchIndexes(baseUrl, searchContext);
+-    }
++    const remoteWorker = await getRemoteWorker();
++    await remoteWorker.fetchIndexes(baseUrl, searchContext);
+ }
+ export async function searchByWorker(baseUrl, searchContext, input, limit) {
+-    if (process.env.NODE_ENV === "production") {
+-        const remoteWorker = await getRemoteWorker();
+-        return remoteWorker.search(baseUrl, searchContext, input, limit);
+-    }
+-    return [];
++    const remoteWorker = await getRemoteWorker();
++    return remoteWorker.search(baseUrl, searchContext, input, limit);
+ }

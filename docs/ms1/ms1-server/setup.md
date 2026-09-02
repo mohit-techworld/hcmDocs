@@ -1,6 +1,7 @@
 ---
 title: MS1 Server - Setup & Installation
 sidebar_position: 2
+description: "This guide will help you set up the MS1 Server (backend) quickly and start working on the project."
 ---
 
 # MS1 Server - Setup & Installation Guide
@@ -211,10 +212,10 @@ JWT_SECRET=<generated_secret>
 
 ## Next Steps
 
-1. ✅ Server is running
-2. 📖 Read [MS1 Server Folder Structure](./folder-structure) to understand the codebase
-3. 🔧 Read [MS1 Server Configuration](./configuration) for advanced settings
-4. 📚 Explore [Modules Documentation](../modules) for specific features
+1. Server is running
+2. Read [MS1 Server Folder Structure](./folder-structure) to understand the codebase
+3. Read [MS1 Server Folder Structure](./folder-structure) for advanced settings
+4. Explore [Modules Documentation](./modules) for specific features
 
 ## Development Tips
 

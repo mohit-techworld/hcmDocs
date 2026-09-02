@@ -1,6 +1,7 @@
 ---
 title: Database Management Component
 sidebar_position: 1
+description: "The Database Management component (components/database-management/DatabaseManagement.jsx) provides interfaces for creating and managing company databases."
 ---
 
 # Database Management Component (MS1 Client)
@@ -44,5 +45,5 @@ Uses database API services:
 
 **Next Steps:**
 - Read [MS1 Server - Database Management API](../../ms1-server/modules/database-management) for backend details
-- See [Database Management Overview](../modules/database-management-overview) for complete system understanding
+- See [Database Management Overview](../../modules/database-management-overview) for complete system understanding
 

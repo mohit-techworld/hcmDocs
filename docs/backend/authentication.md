@@ -1,6 +1,7 @@
 ---
 title: "Authentication & Authorisation"
 sidebar_position: 2
+description: "The authentication stack combines secure credential storage, optional OTP verification, device-bound JWTs, and granular permission mapping. This document."
 ---
 
 # Authentication & Authorisation

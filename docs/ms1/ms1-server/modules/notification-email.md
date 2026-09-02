@@ -1,6 +1,7 @@
 ---
 title: Notification Email API
 sidebar_position: 1
+description: "The Notification Email module manages the list of email addresses that receive automated system notifications."
 ---
 
 # Notification Email API (Server-Side)
@@ -148,5 +149,5 @@ Notification emails are used by:
 
 **Next Steps:**
 - Read [MS1 Client - Notification Email Component](../../ms1-client/components/notification-email) for frontend details
-- See [Notification Email Overview](../modules/notification-email-overview) for complete system understanding
+- See [Notification Email Overview](../../modules/notification-email-overview) for complete system understanding
 

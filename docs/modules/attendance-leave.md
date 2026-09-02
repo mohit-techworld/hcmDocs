@@ -1,6 +1,7 @@
 ---
 title: "Attendance & Leave Module"
 sidebar_position: 3
+description: "The Attendance & Leave module orchestrates time tracking, shift enforcement, geolocation, missed punch workflows, and leave approvals."
 ---
 
 # Attendance & Leave Management

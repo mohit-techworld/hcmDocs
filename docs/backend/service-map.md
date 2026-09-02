@@ -1,6 +1,7 @@
 ---
 title: Backend Service Map
 sidebar_position: 1
+description: "The Express backend is organised by domain. Every feature lives inside its own folder under src/controllers, src/models, and src/routes/v1."
 ---
 
 # Backend Service Map

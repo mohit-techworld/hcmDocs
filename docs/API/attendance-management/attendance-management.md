@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Attendance Management"
+description: "Attendance Management — HCM platform documentation."
 ---
 
 # Attendance Management
 
-<!-- # Attendance Management API Documentation -->
+{/* # Attendance Management API Documentation */}
 
 ## Overview
 

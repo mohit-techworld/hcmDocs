@@ -1,6 +1,7 @@
 ---
 title: "Performance Management - Part 2: KPI Management"
 sidebar_position: 8
+description: "Performance Management Module - Part 2: KPI Management — HCM platform documentation."
 ---
 
 # Performance Management Module - Part 2: KPI Management

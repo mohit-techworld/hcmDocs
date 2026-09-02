@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Holiday Management"
+description: "The Holiday Management API provides access to public holidays in India for the current year, specifically filtered for the current month."
 ---
 
 # Holiday Management
 
-<!-- # Holiday Management API Documentation -->
+{/* # Holiday Management API Documentation */}
 
 ## Overview
 

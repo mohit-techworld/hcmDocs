@@ -1,6 +1,7 @@
 ---
 title: "Asset & Inventory Management"
 sidebar_position: 7
+description: "The asset module tracks company-issued assets (laptops, mobile devices, etc.), while the inventory module manages consumables and stock levels."
 ---
 
 # Asset & Inventory Management

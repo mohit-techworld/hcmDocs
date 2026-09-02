@@ -1,6 +1,7 @@
 ---
 title: Contact Component
 sidebar_position: 1
+description: "The Contact component provides a contact form for the public website to submit inquiries."
 ---
 
 # Contact Component (MS1 Client)
@@ -42,5 +43,5 @@ Uses contact API services:
 
 **Next Steps:**
 - Read [MS1 Server - Contact API](../../ms1-server/modules/contact) for backend details
-- See [Contact Overview](../modules/contact-overview) for complete system understanding
+- See [Contact Overview](../../modules/contact-overview) for complete system understanding
 

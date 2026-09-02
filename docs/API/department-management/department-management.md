@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
+title: "Department Management"
+description: "The Department Management API provides comprehensive functionality for managing organizational departments and their allocations to employees."
 ---
 
 # Department Management
 
-<!-- # Department Management API Documentation -->
+{/* # Department Management API Documentation */}
 
 ## Overview
 

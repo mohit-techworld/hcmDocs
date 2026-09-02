@@ -1,6 +1,7 @@
 ---
 title: Database Management API
 sidebar_position: 1
+description: "The Database Management module handles creation, deletion, and management of company-specific MongoDB databases for multi-tenant architecture."
 ---
 
 # Database Management API (Server-Side)
@@ -135,5 +136,5 @@ This module enables:
 
 **Next Steps:**
 - Read [MS1 Client - Database Management Component](../../ms1-client/components/database-management) for frontend details
-- See [Database Management Overview](../modules/database-management-overview) for complete system understanding
+- See [Database Management Overview](../../modules/database-management-overview) for complete system understanding
 

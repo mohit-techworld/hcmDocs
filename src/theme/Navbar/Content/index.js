@@ -15,7 +15,6 @@ import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
-import ColorThemeSwitcher from '@site/src/components/ColorThemeSwitcher/ColorThemeSwitcher';
 import styles from './styles.module.css';
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -65,6 +64,11 @@ export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
+  // A `type: "search"` navbar item lets the config place the search box
+  // explicitly; without one we render it here, as upstream does. This block
+  // was missing from the swizzle, which is why the site shipped a working
+  // search index and /search page with no way to reach either.
+  const searchBarItem = items.find((item) => item.type === "search");
   return (
     <NavbarContentLayout
       left={
@@ -80,8 +84,12 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
-          <ColorThemeSwitcher />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
+          {!searchBarItem && (
+            <NavbarSearch>
+              <SearchBar />
+            </NavbarSearch>
+          )}
         </>
       }
     />

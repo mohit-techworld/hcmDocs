@@ -1,6 +1,7 @@
 ---
 title: Demo Management Component
 sidebar_position: 1
+description: "The Demo Management component is a React-based admin interface for managing demo requests. It provides a comprehensive dashboard for viewing, filtering."
 ---
 
 # Demo Management Component (MS1 Client)
@@ -13,13 +14,13 @@ The Demo Management component is a React-based admin interface for managing demo
 
 The `DemoEnquiry` component (`components/demo-enquiry/DemoEnquiry.jsx`) provides administrators with a powerful interface to:
 
-- 📋 View all demo requests in a searchable, filterable table
-- 🔍 Filter by status, date range, and search terms
-- 📅 Schedule and reschedule demo meetings
-- ✅ Update demo request statuses
-- 📧 Manage email notifications
-- 📊 Export data to CSV/Excel
-- 💬 Add meeting notes and track history
+- View all demo requests in a searchable, filterable table
+- Filter by status, date range, and search terms
+- Schedule and reschedule demo meetings
+- Update demo request statuses
+- Manage email notifications
+- Export data to CSV/Excel
+- Add meeting notes and track history
 
 ## Component Structure
 
@@ -304,12 +305,12 @@ demoApi.getSortOptions()
 - Loading skeletons
 
 **Row Actions:**
-- 📅 Schedule Demo
-- ✅ Mark Complete
-- ❌ Mark Cancelled
-- 🔄 Reschedule
-- 👁️ View Details
-- 📧 Contact
+- Schedule Demo
+- Mark Complete
+- Mark Cancelled
+- Reschedule
+- View Details
+- Contact
 
 ### 2. Demo Request Details Modal
 
@@ -441,7 +442,7 @@ The component uses Tailwind CSS with:
 ---
 
 **Next Steps:**
-- 📖 [MS1 Server - Demo Management Module](../ms1-server/modules/demo-management)
-- 🔧 [MS1 Client - Folder Structure](../folder-structure)
-- 🎨 [MS1 Client - Components Overview](./overview)
+- [MS1 Server - Demo Management Module](../../ms1-server/modules/demo-management)
+- [MS1 Client - Folder Structure](../folder-structure)
+- [MS1 Client - Components Overview](../components)
 

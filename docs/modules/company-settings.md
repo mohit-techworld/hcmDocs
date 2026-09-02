@@ -1,6 +1,7 @@
 ---
 title: "Company Settings & Permissions"
 sidebar_position: 9
+description: "Company Settings is the configuration nucleus of the platform. It governs departments, designations, employment types, shifts, hierarchy, and permission."
 ---
 
 # Company Settings & Permissions

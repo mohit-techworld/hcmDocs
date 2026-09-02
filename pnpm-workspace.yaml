@@ -1,0 +1,7 @@
+# core-js ships a postinstall banner script we do not need; keep it disabled so
+# `pnpm install` stays quiet and deterministic in CI.
+allowBuilds:
+  core-js: false
+  puppeteer: set this to true or false
+patchedDependencies:
+  '@easyops-cn/docusaurus-search-local@0.51.1': patches/@easyops-cn__docusaurus-search-local@0.51.1.patch

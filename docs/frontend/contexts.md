@@ -1,6 +1,7 @@
 ---
 title: React Contexts
 sidebar_position: 2
+description: "The /src/contexts directory hosts React context providers that deliver cross-cutting functionality such as chat state, theme preferences, and app-wide."
 ---
 
 # React Contexts
@@ -16,7 +17,9 @@ The `/src/contexts` directory hosts React context providers that deliver cross-c
 | `contexts/ThemeContext.jsx` (if present) | Manages light/dark theme switching. |
 | `contexts/UserPreferenceContext.jsx` (if present) | Stores misc user preferences beyond auth store (e.g., dashboard layouts). |
 
-> ⚠️ Context files evolve; check the directory for additional providers.
+:::caution
+Context files evolve; check the directory for additional providers.
+:::
 
 ## Chat Context Highlight
 

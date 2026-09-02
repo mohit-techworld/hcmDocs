@@ -1,6 +1,7 @@
 ---
 title: Backup & Restore - Overview
 sidebar_position: 3
+description: "The Backup & Restore system provides comprehensive database backup and restore functionality for both company databases and the admin database. It."
 ---
 
 # Backup & Restore - Complete Guide
@@ -135,25 +136,25 @@ To understand Backup & Restore completely, read in this order:
 ## Key Features
 
 ### Backup Features
-- ✅ **Manual Backups** - Create backups on demand
-- ✅ **Automated Backups** - Scheduled backups (hourly, daily, weekly, monthly)
-- ✅ **S3 Storage** - Backups stored securely in AWS S3
-- ✅ **Compression** - Backups are gzipped to save space
-- ✅ **Metadata Tracking** - Backup history and details stored
-- ✅ **Checksum Verification** - MD5 checksums for integrity
+- **Manual Backups** - Create backups on demand
+- **Automated Backups** - Scheduled backups (hourly, daily, weekly, monthly)
+- **S3 Storage** - Backups stored securely in AWS S3
+- **Compression** - Backups are gzipped to save space
+- **Metadata Tracking** - Backup history and details stored
+- **Checksum Verification** - MD5 checksums for integrity
 
 ### Restore Features
-- ✅ **Full Restore** - Restore entire database
-- ✅ **Collection Restore** - Restore specific collections only
-- ✅ **Admin Database Restore** - Restore admin database (protected)
-- ✅ **Restore History** - Track all restore operations
-- ✅ **Confirmation Required** - Safety confirmation before restore
+- **Full Restore** - Restore entire database
+- **Collection Restore** - Restore specific collections only
+- **Admin Database Restore** - Restore admin database (protected)
+- **Restore History** - Track all restore operations
+- **Confirmation Required** - Safety confirmation before restore
 
 ### Settings Features
-- ✅ **Auto-Backup Configuration** - Enable/disable automated backups
-- ✅ **Schedule Configuration** - Set backup frequency and times
-- ✅ **Notification Settings** - Email notifications on success/failure
-- ✅ **Retention Policy** - Configure backup retention rules
+- **Auto-Backup Configuration** - Enable/disable automated backups
+- **Schedule Configuration** - Set backup frequency and times
+- **Notification Settings** - Email notifications on success/failure
+- **Retention Policy** - Configure backup retention rules
 
 ## Quick Reference
 
@@ -200,10 +201,10 @@ To understand Backup & Restore completely, read in this order:
 
 ## Next Steps
 
-1. 📖 Read [MS1 Server - Backup & Restore API](../ms1-server/modules/backup-restore) for backend details
-2. 🎨 Read [MS1 Client - Backup & Restore Component](../ms1-client/components/backup-restore) for frontend details
-3. 🔧 Check [MS1 Server Setup](../ms1-server/setup) for AWS S3 configuration
-4. ⚙️ See [Backup Settings](../ms1-server/modules/backup-restore#backup-settings) for configuration
+1. Read [MS1 Server - Backup & Restore API](../ms1-server/modules/backup-restore) for backend details
+2. Read [MS1 Client - Backup & Restore Component](../ms1-client/components/backup-restore) for frontend details
+3. Check [MS1 Server Setup](../ms1-server/setup) for AWS S3 configuration
+4. See [Backup Settings](../ms1-server/modules/backup-restore#backup-settings-endpoints) for configuration
 
 ---
 
