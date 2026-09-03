@@ -15,7 +15,7 @@ const FeatureList = [
         organizational hierarchy with comprehensive employee data management.
       </>
     ),
-    link: "/docs/modules/employee-management",
+    link: "/hcm/modules/employee-management",
   },
   {
     title: "Attendance & Time Tracking",
@@ -27,7 +27,7 @@ const FeatureList = [
         analytics for accurate time monitoring.
       </>
     ),
-    link: "/docs/modules/attendance-leave",
+    link: "/hcm/modules/attendance-leave",
   },
   {
     title: "Payroll Management",
@@ -39,7 +39,7 @@ const FeatureList = [
         claims processing, and full & final settlement automation.
       </>
     ),
-    link: "/docs/modules/payroll",
+    link: "/hcm/modules/payroll",
   },
   {
     title: "Leave Management",
@@ -51,7 +51,7 @@ const FeatureList = [
         tracking for employees and managers.
       </>
     ),
-    link: "/docs/modules/attendance-leave",
+    link: "/hcm/modules/attendance-leave",
   },
   {
     title: "Task Management",
@@ -63,7 +63,7 @@ const FeatureList = [
         to ensure timely project completion.
       </>
     ),
-    link: "/docs/modules/task-management",
+    link: "/hcm/modules/task-management",
   },
   {
     title: "Ticket & POSH Management",
@@ -75,7 +75,7 @@ const FeatureList = [
         with proper compliance and reporting mechanisms.
       </>
     ),
-    link: "/docs/modules/ticket-management",
+    link: "/hcm/modules/ticket-management",
   },
   {
     title: "Performance Management",
@@ -87,7 +87,7 @@ const FeatureList = [
         recognition, and comprehensive performance dashboards.
       </>
     ),
-    link: "/docs/modules/performance",
+    link: "/hcm/modules/performance",
   },
   {
     title: "Recruitment Management",
@@ -99,7 +99,7 @@ const FeatureList = [
         scheduling, and recruitment analytics.
       </>
     ),
-    link: "/docs/modules/recruitment",
+    link: "/hcm/modules/recruitment",
   },
   {
     title: "Roster Management",
@@ -111,7 +111,7 @@ const FeatureList = [
         optimal workforce planning.
       </>
     ),
-    link: "/docs/modules/roster-management",
+    link: "/hcm/modules/roster-management",
   },
   {
     title: "Engagement & Synergy",
@@ -123,7 +123,7 @@ const FeatureList = [
         interaction and team synergy across the organization.
       </>
     ),
-    link: "/docs/modules/employee-engagement-detailed",
+    link: "/hcm/modules/employee-engagement-detailed",
   },
   {
     title: "Productivity Analytics",
@@ -135,7 +135,7 @@ const FeatureList = [
         to optimize workforce efficiency.
       </>
     ),
-    link: "/docs/modules/productivity",
+    link: "/hcm/modules/productivity",
   },
   {
     title: "RACI Analytics",
@@ -147,7 +147,7 @@ const FeatureList = [
         accountability mapping and organizational clarity.
       </>
     ),
-    link: "/docs/modules/raci-analytics",
+    link: "/hcm/modules/raci-analytics",
   },
   {
     title: "Document Center",
@@ -159,7 +159,7 @@ const FeatureList = [
         access and compliance.
       </>
     ),
-    link: "/docs/modules/document-center",
+    link: "/hcm/modules/document-center",
   },
   {
     title: "Inventory & Assets",
@@ -171,7 +171,7 @@ const FeatureList = [
         inventory reporting for efficient resource management.
       </>
     ),
-    link: "/docs/modules/asset-inventory",
+    link: "/hcm/modules/asset-inventory",
   },
   {
     title: "Resignation & F&F",
@@ -183,7 +183,7 @@ const FeatureList = [
         tracking for smooth employee exits.
       </>
     ),
-    link: "/docs/modules/resignation-fnf",
+    link: "/hcm/modules/resignation-fnf",
   },
   {
     title: "Geolocation Tracking",
@@ -195,7 +195,7 @@ const FeatureList = [
         for mobile workforce management.
       </>
     ),
-    link: "/docs/modules/geolocation",
+    link: "/hcm/modules/geolocation",
   },
   {
     title: "Company Settings",
@@ -207,7 +207,7 @@ const FeatureList = [
         organizational structure setup.
       </>
     ),
-    link: "/docs/modules/company-settings",
+    link: "/hcm/modules/company-settings",
   },
   {
     title: "Role-Based Dashboards",
@@ -219,7 +219,7 @@ const FeatureList = [
         and actionable insights.
       </>
     ),
-    link: "/docs/modules/dashboard-analytics",
+    link: "/hcm/modules/dashboard-analytics",
   },
 ];
 

@@ -63,7 +63,7 @@ export default function AnalyticsCard() {
             widgets.
           </p>
         </div>
-        <a href="/docs/analytics" className={styles.cardButton}>
+        <a href="/hcm/modules/dashboard-analytics" className={styles.cardButton}>
           View Analytics →
         </a>
       </div>

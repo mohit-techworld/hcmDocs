@@ -56,7 +56,7 @@ export default function ApiCard() {
             OpenAPI specification for seamless developer experience.
           </p>
         </div>
-        <a href="/docs/API" className={styles.cardButton}>
+        <a href="/hcm/API/" className={styles.cardButton}>
           API Reference →
         </a>
       </div>

@@ -68,7 +68,7 @@ export default function SeamlessConnectivityCard() {
             provides granular permissions for each feature.
           </p>
         </div>
-        <a href="/docs/modules" className={styles.cardButton}>
+        <a href="/hcm/modules/" className={styles.cardButton}>
           All Modules →
         </a>
       </div>

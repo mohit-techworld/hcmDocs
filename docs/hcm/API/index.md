@@ -10,7 +10,7 @@ Every endpoint below lives on the tenant backend and is mounted under `/api/v1`.
 
 :::warning Read this first
 Every non-public request must carry a tenant identity, or it is rejected before
-your controller runs. See **[Request Headers](../tenancy/request-headers.md)** —
+your controller runs. See **[Request Headers](/platform/request-headers)** —
 a request with only `Authorization` and `Content-Type` returns
 `403 TENANT_HEADER_REQUIRED`.
 :::

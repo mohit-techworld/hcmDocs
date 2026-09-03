@@ -263,7 +263,7 @@ For production deployment:
 5. Configure AWS S3 properly
 6. Set up monitoring and logging
 
-See [Deployment Guide](../../devops/deployment) for details.
+See [Deployment Guide](/hcm/devops/deployment) for details.
 
 ---
 

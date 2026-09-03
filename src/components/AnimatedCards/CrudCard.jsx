@@ -56,7 +56,7 @@ export default function CrudCard() {
           </p>
         </div>
         <a
-          href="/docs/getting-started/project-setup"
+          href="/hcm/getting-started/project-setup"
           className={styles.cardButton}
         >
           Learn more →

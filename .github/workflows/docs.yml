@@ -24,6 +24,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # products.js must stay parseable — every plugin instance, the navbar
+      # dropdown and the footer are generated from it.
+      - name: Check product registry
+        run: node scripts/check-products.mjs
+
       # Every page needs title + description front matter.
       - name: Check front matter
         run: node scripts/check-frontmatter.cjs --list

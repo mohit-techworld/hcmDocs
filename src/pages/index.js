@@ -12,6 +12,7 @@ import ApiCard from "@site/src/components/AnimatedCards/ApiCard";
 import StatsSection from "@site/src/components/StatsSection";
 import TechStackSection from "@site/src/components/TechStackSection";
 import CallToAction from "@site/src/components/CallToAction";
+import ProductHub from "@site/src/components/ProductHub";
 
 import Icon from "@site/src/components/Icon";
 import Heading from "@theme/Heading";
@@ -47,13 +48,13 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--primary button--lg"
-              to="/docs/intro"
+              to="/hcm/intro"
             >
               Get Started →
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/getting-started/installation"
+              to="/hcm/getting-started/installation"
             >
               Installation Guide
             </Link>
@@ -78,7 +79,7 @@ function QuickLinks() {
         </p>
         <div className={styles.linksGrid}>
           <Link
-            to="/docs/getting-started/project-setup"
+            to="/hcm/getting-started/project-setup"
             className={styles.quickLinkCard}
           >
             <div className={styles.quickLinkIcon}>
@@ -88,7 +89,7 @@ function QuickLinks() {
             <p>Set up your development environment and start building</p>
           </Link>
           <Link
-            to="/docs/API/Authentication/auth-setup"
+            to="/hcm/API/Authentication/auth-setup"
             className={styles.quickLinkCard}
           >
             <div className={styles.quickLinkIcon}>
@@ -98,7 +99,7 @@ function QuickLinks() {
             <p>Complete API documentation for all endpoints and integrations</p>
           </Link>
           <Link
-            to="/docs/architecture/overview"
+            to="/hcm/architecture/overview"
             className={styles.quickLinkCard}
           >
             <div className={styles.quickLinkIcon}>
@@ -107,7 +108,7 @@ function QuickLinks() {
             <h3>System Architecture</h3>
             <p>Understand the architecture, design patterns, and data flow</p>
           </Link>
-          <Link to="/docs/backend/services" className={styles.quickLinkCard}>
+          <Link to="/hcm/backend/services" className={styles.quickLinkCard}>
             <div className={styles.quickLinkIcon}>
               <Icon name="server" size={24} />
             </div>
@@ -116,14 +117,14 @@ function QuickLinks() {
               Explore backend modules, controllers, and service architecture
             </p>
           </Link>
-          <Link to="/docs/frontend/overview" className={styles.quickLinkCard}>
+          <Link to="/hcm/frontend/overview" className={styles.quickLinkCard}>
             <div className={styles.quickLinkIcon}>
               <Icon name="code" size={24} />
             </div>
             <h3>Frontend Guide</h3>
             <p>Learn about React components, routing, and state management</p>
           </Link>
-          <Link to="/docs/devops/deployment" className={styles.quickLinkCard}>
+          <Link to="/hcm/devops/deployment" className={styles.quickLinkCard}>
             <div className={styles.quickLinkIcon}>
               <Icon name="cloud" size={24} />
             </div>
@@ -145,6 +146,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        <ProductHub />
         <section className={styles.animatedCardsSection}>
           <div className="container">
             <div className={styles.animatedCardsGrid}>

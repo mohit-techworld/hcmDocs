@@ -5,6 +5,12 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
+import {
+  docsPlugins,
+  navbarProductItems,
+  searchContexts,
+  LIVE_PRODUCTS,
+} from "./products.mjs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -88,6 +94,31 @@ const config = {
   },
 
   plugins: [
+    // One docs instance per live product (see products.js).
+    ...docsPlugins(),
+
+    // The docs used to live under /docs/*. Everything moved under its
+    // product, so keep the old URLs working rather than breaking bookmarks.
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        createRedirects(existingPath) {
+          const map = [
+            ["/platform/", "/docs/tenancy/"],
+            ["/ms1/", "/docs/ms1/"],
+            ["/hcm/", "/docs/"],
+          ];
+          for (const [to, from] of map) {
+            if (existingPath.startsWith(to)) {
+              return [from + existingPath.slice(to.length)];
+            }
+          }
+          return undefined;
+        },
+        redirects: [{ from: "/docs", to: "/" }],
+      },
+    ],
+
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -101,7 +132,16 @@ const config = {
         explicitSearchResultPath: true,
         indexBlog: false,
         indexPages: true,
-        docsRouteBasePath: "/docs",
+        // There is no "default" docs instance any more (the preset no longer
+        // owns docs), so the version-preference hook has to be pointed at a
+        // real instance or every page fails to render.
+        docsPluginIdForPreferredVersion: "hcm",
+        // Every product's route base, so all instances are indexed.
+        docsRouteBasePath: LIVE_PRODUCTS.map((p) => p.id),
+        // Scope results to the product the reader is already in — a search
+        // from /hcm should not be competing with 46 MS1 pages.
+        searchContextByPaths: searchContexts(),
+        useAllContextsWithNoSearchContext: true,
 
         // Cmd/Ctrl+K to focus the search box, with the hint badge rendered
         // inside it. On by default, but there was no search box to bind to
@@ -123,14 +163,11 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/Razor-Infotech/hcmDoc/tree/main/",
-          // Readers on a multi-tenant product need to know whether a page
-          // still describes what they are running.
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
-        },
+        // Docs are no longer owned by the preset: each product gets its own
+        // plugin-content-docs instance, generated from products.js. That is
+        // what gives every product its own route space, its own sidebar and —
+        // the reason it matters here — its own versioning timeline.
+        docs: false,
         blog: false,
         theme: {
           customCss: ["./src/css/custom.css", "./src/css/sidebar-icons.css"],
@@ -154,33 +191,28 @@ const config = {
         },
         hideOnScroll: true,
         items: [
+          // Straight into whichever product the reader needs. Generated from
+          // products.js, so a new product appears here automatically.
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            type: "dropdown",
+            label: "Products",
             position: "left",
-            label: "Documentation",
-            className: "si-book",
+            className: "si-modules",
+            items: navbarProductItems(),
           },
+          // Deep links for the product currently being read.
           {
-            // Was a hand-listed dropdown covering 10 of 17 API pages, with no
-            // sidebar on any of them. Now backed by a real sidebar, so every
-            // page is reachable and knows where it sits.
             type: "docSidebar",
-            sidebarId: "apiSidebar",
+            docsPluginId: "hcm",
+            sidebarId: "hcmApiSidebar",
             position: "left",
             label: "API Reference",
             className: "si-api",
           },
           {
-            type: "docSidebar",
-            sidebarId: "ms1Sidebar",
-            position: "left",
-            label: "MS1",
-            className: "si-ms1",
-          },
-          {
             type: "doc",
-            docId: "tenancy/index",
+            docsPluginId: "platform",
+            docId: "index",
             position: "left",
             label: "Multi-Tenancy",
             className: "si-tenancy",
@@ -191,25 +223,8 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Documentation",
-            items: [
-              {
-                label: "Getting Started",
-                to: "/docs/intro",
-              },
-              {
-                label: "Installation",
-                to: "/docs/getting-started/installation",
-              },
-              {
-                label: "API Reference",
-                to: "/docs/API",
-              },
-              {
-                label: "Modules",
-                to: "/docs/modules",
-              },
-            ],
+            title: "Products",
+            items: LIVE_PRODUCTS.map((p) => ({ label: p.label, to: p.entry })),
           },
           {
             title: "Resources",
@@ -241,7 +256,7 @@ const config = {
               },
               {
                 label: "Help Center",
-                to: "/docs/intro",
+                to: "/hcm/intro",
               },
               {
                 label: "Report Issue",

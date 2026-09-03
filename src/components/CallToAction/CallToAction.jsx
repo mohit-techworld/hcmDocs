@@ -13,11 +13,11 @@ export default function CallToAction() {
                         extend the HCM platform for your organization.
                     </p>
                     <div className={styles.ctaButtons}>
-                        <Link to="/docs/intro" className={styles.ctaButtonPrimary}>
+                        <Link to="/hcm/intro" className={styles.ctaButtonPrimary}>
                             Explore Documentation
                         </Link>
                         <Link
-                            to="/docs/getting-started/installation"
+                            to="/hcm/getting-started/installation"
                             className={styles.ctaButtonSecondary}
                         >
                             Installation Guide

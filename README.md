@@ -90,15 +90,48 @@ CI runs the build and the two fast checks on every pull request
 
 ## Layout
 
-| Path | Contents |
-| --- | --- |
-| `docs/tenancy/` | Multi-tenant request contract — start here for API work |
-| `docs/API/` | Endpoint reference, grouped by domain |
-| `docs/modules/` | Functional module guides |
-| `docs/ms1/` | MS1 control plane (server + admin client) |
-| `docs/backend/`, `docs/frontend/` | Implementation guides |
-| `src/components/Icon/` | The site's icon vocabulary (Lucide) |
-| `scripts/` | Repo checks and asset generation |
+The site hosts one docs instance **per product**, generated from
+[`products.mjs`](products.mjs) — the single source of truth.
+
+| Path | Route | Contents |
+| --- | --- | --- |
+| `docs/platform/` | `/platform` | Multi-tenancy contract — applies to every product |
+| `docs/hcm/` | `/hcm` | Human Maximizer: modules, guides, API reference |
+| `docs/ms1/` | `/ms1` | MS1 control plane (server + admin client) |
+| `sidebars/` | | One sidebar file per instance |
+| `src/components/Icon/` | | The icon vocabulary (Lucide) |
+| `scripts/` | | Repo checks and asset generation |
+
+### Adding a product
+
+Add one entry to `products.mjs`. That single entry produces the docs plugin
+instance, the navbar **Products** dropdown item, the homepage hub card, the
+footer link and the search context. Nothing else needs editing.
+
+```js
+{
+  id: "payroll-cloud",
+  label: "Payroll Cloud",
+  blurb: "One line, shown on the hub card.",
+  status: "live",                 // or "planned" — listed in the UI, no routes
+  path: "docs/payroll-cloud",
+  sidebar: "./sidebars/payroll-cloud.js",
+  entry: "/payroll-cloud/",
+  navClass: "si-modules",         // CSS mask class, for navbar + sidebar
+  icon: "box",                    // <Icon> name, for React surfaces
+}
+```
+
+Then create `docs/<id>/` and `sidebars/<id>.js`. Run
+`node scripts/check-products.mjs` to validate the entry; CI runs it on every PR.
+
+Two icon fields because the two contexts differ: the navbar and sidebar accept
+only a `className`, so they use the generated CSS masks; React surfaces use the
+`<Icon>` component. Add new glyphs to the `MAP` in
+`scripts/build-sidebar-icons.cjs` and to `src/components/Icon/index.js`.
+
+Old `/docs/*` URLs redirect to their new product route, so existing links and
+bookmarks keep working.
 
 ## Conventions
 

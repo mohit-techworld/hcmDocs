@@ -1,14 +1,8 @@
 /**
- * Sidebars.
- *
- * Three sidebars, so each audience gets a lane:
- *   tutorialSidebar — guides: architecture, tenancy, backend, frontend, modules
- *   apiSidebar      — the endpoint reference (previously had NO sidebar at all)
- *   ms1Sidebar      — the MS1 control plane, server + client + overviews
+ * Human Maximizer (the HRMS). Two lanes: guides and the endpoint reference.
  */
 const sidebars = {
-  // ───────────────────────────── Guides ─────────────────────────────
-  tutorialSidebar: [
+  hcmSidebar: [
     "intro",
     {
       type: "category",
@@ -29,21 +23,6 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: ["architecture/overview"],
-    },
-    {
-      type: "category",
-      label: "Multi-Tenancy",
-      className: "si-tenancy",
-      collapsible: true,
-      collapsed: false,
-      link: { type: "doc", id: "tenancy/index" },
-      items: [
-        "tenancy/request-headers",
-        "tenancy/errors",
-        "tenancy/query-scoping",
-        "tenancy/edge-routing",
-        "tenancy/device-auth",
-      ],
     },
     {
       type: "category",
@@ -174,8 +153,7 @@ const sidebars = {
     },
   ],
 
-  // ─────────────────────────── API reference ───────────────────────────
-  apiSidebar: [
+  hcmApiSidebar: [
     "API/index",
     {
       type: "category",
@@ -241,60 +219,6 @@ const sidebars = {
       collapsed: false,
       items: ["API/posh-management/posh-management"],
     },
-  ],
-
-  // ──────────────────────── MS1 (control plane) ────────────────────────
-  ms1Sidebar: [
-    "ms1/README",
-    {
-      type: "category",
-      label: "MS1 Server",
-      className: "si-backend",
-      collapsible: true,
-      collapsed: true,
-      link: { type: "doc", id: "ms1/ms1-server/modules/index" },
-      items: [
-        { type: "doc", id: "ms1/ms1-server/folder-structure", label: "Folder Structure" },
-        { type: "doc", id: "ms1/ms1-server/setup", label: "Setup & Installation" },
-      ],
-    },
-    {
-      type: "category",
-      label: "MS1 Client",
-      className: "si-frontend",
-      collapsible: true,
-      collapsed: true,
-      link: { type: "doc", id: "ms1/ms1-client/components/index" },
-      items: [
-        { type: "doc", id: "ms1/ms1-client/folder-structure", label: "Folder Structure" },
-        { type: "doc", id: "ms1/ms1-client/setup", label: "Setup & Installation" },
-      ],
-    },
-    ...[
-      ["Demo Management", "demo-management"],
-      ["Plan Management", "plan-management"],
-      ["Backup & Restore", "backup-restore"],
-      ["Admin User Management", "admin-user-management"],
-      ["Permissions Management", "permissions-management"],
-      ["Authentication", "authentication"],
-      ["Billing", "billing"],
-      ["Contact", "contact"],
-      ["Database Management", "database-management"],
-      ["Landing Demo", "landing-demo"],
-      ["Login History", "login-history"],
-      ["Notification Email", "notification-email"],
-      ["Login Restrictions", "login-restrictions"],
-    ].map(([label, slug]) => ({
-      type: "category",
-      label,
-      collapsible: true,
-      collapsed: true,
-      items: [
-        { type: "doc", id: `ms1/modules/${slug}-overview`, label: "Overview" },
-        { type: "doc", id: `ms1/ms1-server/modules/${slug}`, label: "Server API" },
-        { type: "doc", id: `ms1/ms1-client/components/${slug}`, label: "Client Component" },
-      ],
-    })),
   ],
 };
 

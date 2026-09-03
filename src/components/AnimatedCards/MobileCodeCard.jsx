@@ -219,7 +219,7 @@ export default function MobileCodeCard() {
             authentication are all built-in for a seamless mobile experience.
           </p>
         </div>
-        <a href="/docs/mobile" className={styles.cardButton}>
+        <a href="/#products" className={styles.cardButton}>
           Mobile Docs →
         </a>
       </div>
