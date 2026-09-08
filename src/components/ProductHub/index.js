@@ -2,7 +2,10 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
 import Icon from "@site/src/components/Icon";
-import { PRODUCTS } from "@site/products.mjs";
+// products.json, not products.mjs: the .mjs module reads the registry
+// with node:fs, which only exists server-side. Webpack imports the JSON
+// natively, so the client bundle stays Node-free.
+import PRODUCTS from "@site/products.json";
 import styles from "./styles.module.css";
 
 /**
