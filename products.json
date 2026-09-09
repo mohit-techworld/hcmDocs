@@ -48,5 +48,16 @@
     "status": "planned",
     "navClass": "si-backend",
     "icon": "server"
+  },
+  {
+    "id": "hcm-mobileapp",
+    "label": "HCM MobileApp",
+    "blurb": "HCM-MobileApp",
+    "status": "live",
+    "path": "docs/hcm-mobileapp",
+    "entry": "/hcm-mobileapp/",
+    "navClass": "si-platform",
+    "icon": "book",
+    "repo": "https://github.com/Razor-Infotech/HCM-MobileApp.git"
   }
 ]
