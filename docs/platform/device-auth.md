@@ -113,5 +113,4 @@ cannot be carried over. See [Tenancy Model](index.md#two-architectures-one-codeb
 
 All of these identify a *machine*, not a person. None of them widen tenant
 scope — like `companyid`, they are checked against the tenant already resolved.
-Mohit Kumar
 
