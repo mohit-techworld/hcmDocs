@@ -36,11 +36,13 @@ const config = {
     },
   },
 
-  // Set the production url of your site here
-  url: "https://humanmaximizer.com/",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  // Where this build will be served from. Defaults to the production home,
+  // and CI overrides both when publishing a preview to GitHub Pages, which
+  // serves from https://<owner>.github.io/<repo>/ rather than a domain root.
+  // Docusaurus bakes these into every generated link, so they must match the
+  // real location or the whole site 404s on its own navigation.
+  url: process.env.DOCS_URL || "https://humanmaximizer.com",
+  baseUrl: process.env.DOCS_BASE_URL || "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

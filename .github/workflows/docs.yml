@@ -5,9 +5,26 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+
+# One deployment at a time, and never cancel one midway: a half-published
+# site is worse than a slightly stale one.
+concurrency:
+  group: docs-pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    # Docusaurus bakes the site URL into every generated link, so the build
+    # has to know where it will be served. GitHub Pages serves a project
+    # site from https://<owner>.github.io/<repo>/, not from a domain root.
+    env:
+      DOCS_URL: https://${{ github.repository_owner }}.github.io
+      DOCS_BASE_URL: /${{ github.event.repository.name }}/
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,6 +36,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
+          # pnpm 11 (pinned in packageManager) uses node:sqlite, which does not
+          # exist before Node 22.13 — on Node 20 the pnpm binary itself crashes.
           node-version: 22
           cache: pnpm
 
@@ -40,3 +59,31 @@ jobs:
       # onBrokenLinks is "throw", so this is also the link check.
       - name: Build
         run: pnpm build
+
+      # Only main produces something publishable. Pull requests stop at the
+      # checks above, which is the gate that keeps a broken build off the site.
+      - name: Package the site
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  # Merging to main publishes. Before this job existed the pipeline built the
+  # site and then threw it away, so merged changes never reached anyone.
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
