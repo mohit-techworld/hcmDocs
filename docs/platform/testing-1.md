@@ -24,5 +24,6 @@ Currently, our attendance module works as follows:
 * It fetches attendance logs from the machines.
 * It uploads those logs to our HRMS cloud database through APIs.
 
-Update the test
+Update the test new file with new oo
+
 
