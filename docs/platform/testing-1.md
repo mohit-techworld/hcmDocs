@@ -23,3 +23,6 @@ Currently, our attendance module works as follows:
 * That Python application connects to biometric machines over the local LAN.
 * It fetches attendance logs from the machines.
 * It uploads those logs to our HRMS cloud database through APIs.
+
+Update the test
+
